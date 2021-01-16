@@ -13,7 +13,7 @@ export default function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path={["/", "/calvinhacks-2021"]} exact component={Home} />
           <Route path="/schedule" exact component={Schedule} />
           <Route path="/faq" exact component={FAQ} />
 
