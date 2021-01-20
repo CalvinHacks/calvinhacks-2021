@@ -8,19 +8,25 @@ export default function HeroSection() {
     <div className="hero-container">
       {/* <video src={video} autoPlay loop muted /> */}
       <h1>CalvinHacks 2021</h1>
-      <p>Wacky ideas</p>
+      <p>Subtitle here</p>
       <div className="hero-btns">
-        <Button
-          className="btns"
-          buttonPath="/sign-up"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
+        <a
+          href="https://my.mlh.io/oauth/authorize?client_id=ypzioIbsUMnyoDOo0VfrnFhxPrUvwouAbSuxGnnKrZA&redirect_uri=http%3A%2F%2Fcalvinhacks.github.io%2Fcalvinhacks-2021%2F&response_type=token"
+          target="_self"
+          rel="noopener noreferrer"
         >
-          Sign Up
-        </Button>
+          <Button
+            className="btns"
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+          >
+            Sign Up
+          </Button>
+        </a>
+
+        {/* Put link to sponsorship packet */}
         <Button
           className="btns"
-          buttonPath="/sponsor-us"
           buttonStyle="btn--primary"
           buttonSize="btn--large"
         >
