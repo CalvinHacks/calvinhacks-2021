@@ -59,16 +59,28 @@ export default function NavBar() {
             </li>
 
             <li>
-              <Link
-                to="/sign-up"
+              <a
+                href="https://my.mlh.io/oauth/authorize?client_id=ypzioIbsUMnyoDOo0VfrnFhxPrUvwouAbSuxGnnKrZA&redirect_uri=http%3A%2F%2Fcalvinhacks.github.io%2Fcalvinhacks-2021%2F&response_type=token"
+                target="_self"
+                rel="noopener noreferrer"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
                 Sign Up
-              </Link>
+              </a>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          {button && (
+            <a
+              href="https://my.mlh.io/oauth/authorize?client_id=ypzioIbsUMnyoDOo0VfrnFhxPrUvwouAbSuxGnnKrZA&redirect_uri=http%3A%2F%2Fcalvinhacks.github.io%2Fcalvinhacks-2021%2F&response_type=token"
+              target="_self"
+              rel="noopener noreferrer"
+            >
+              <Button className="btns" buttonStyle="btn--outline">
+                SIGN UP
+              </Button>
+            </a>
+          )}
         </div>
       </nav>
     </>
