@@ -12,19 +12,20 @@ export default function HeroSection() {
       <div className="hero-btns">
         <Button
           className="btns"
+          buttonPath="/sign-up"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
         >
           Sign Up
         </Button>
-        {/* <Button
+        <Button
           className="btns"
+          buttonPath="/sponsor-us"
           buttonStyle="btn--primary"
           buttonSize="btn--large"
-          onClick={console.log("hey")}
         >
-          WATCH TRAILER <i className="far fa-play-circle" />
-        </Button> */}
+          Sponsor Us
+        </Button>
       </div>
     </div>
   );
