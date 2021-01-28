@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Schedule from "./pages/Schedule";
 import FAQ from "./pages/FAQ";
 import SponsorUs from "./pages/SponsorUs";
-// import Footer from "./components/footer";
+import Footer from "./components/footer";
 
 export default function App() {
   return (
@@ -30,7 +30,9 @@ export default function App() {
           />
         </Switch>
         {/* <Footer /> */}
-        <p>Insert footer here</p>
+        <div>
+          <Footer/>
+        </div>
       </Router>
     </>
   );
