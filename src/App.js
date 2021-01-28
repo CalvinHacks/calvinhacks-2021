@@ -5,7 +5,6 @@ import NavBar from "./components/navBar";
 import Home from "./pages/Home";
 import Schedule from "./pages/Schedule";
 import FAQ from "./pages/FAQ";
-import SponsorUs from "./pages/SponsorUs";
 import Footer from "./components/footer";
 
 export default function App() {
@@ -20,7 +19,7 @@ export default function App() {
         </Switch>
         {/* <Footer /> */}
         <div>
-          <Footer/>
+          <Footer />
         </div>
       </Router>
     </>
