@@ -6,11 +6,9 @@
 }
 
 .row{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    text-align: center;
     color: white;
     font-family:sans-serif;
+    margin-left: 10vw;
 }
 
 .rights {
