@@ -5,7 +5,7 @@ import NavBar from "./components/navBar";
 import Home from "./pages/Home";
 import Schedule from "./pages/Schedule";
 import FAQ from "./pages/FAQ";
-// import Footer from "./components/footer";
+import Footer from "./components/footer";
 
 export default function App() {
   return (
@@ -18,7 +18,9 @@ export default function App() {
           <Route path="/faq" exact component={FAQ} />
         </Switch>
         {/* <Footer /> */}
-        <p>Insert footer here</p>
+        <div>
+          <Footer />
+        </div>
       </Router>
     </>
   );

@@ -1,0 +1,25 @@
+.main-footer{
+    background-color:black;
+    display:flex;
+    flex-direction: column;
+    min-height: 1vh;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    text-align: center;
+    color: white;
+    font-family:sans-serif;
+}
+
+.rights {
+    background-color: maroon;
+    text-align: center;
+    color:white;
+    margin-top: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
