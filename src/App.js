@@ -17,7 +17,6 @@ export default function App() {
           <Route path="/schedule" exact component={Schedule} />
           <Route path="/faq" exact component={FAQ} />
         </Switch>
-        {/* <Footer /> */}
         <div>
           <Footer />
         </div>

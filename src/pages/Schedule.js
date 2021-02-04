@@ -1,6 +1,14 @@
 import React from "react";
 import "../App.css";
 
+import City from "../images/city.png";
+
 export default function Schedule() {
-  return <h1 className="schedule">SCHEDULE</h1>;
+  return (
+    <>
+      <div className="schedule-container">
+        <img src={City} alt="city" />
+      </div>
+    </>
+  );
 }

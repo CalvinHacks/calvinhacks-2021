@@ -6,7 +6,6 @@ import "./heroSection.css";
 export default function HeroSection() {
   return (
     <div className="hero-container">
-      {/* <video src={video} autoPlay loop muted /> */}
       <h1>CalvinHacks 2021</h1>
       <p>Subtitle here</p>
       <div className="hero-btns">

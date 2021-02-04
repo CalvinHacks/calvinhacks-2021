@@ -26,8 +26,8 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="navbar">
-        <div className="navbar-container">
+      <nav className="navbar-container">
+        <div className="navbar">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             CalvinHacks
             <i class="fab fa-typo3" />
