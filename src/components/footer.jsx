@@ -17,7 +17,7 @@ function Footer () {
             </ul>
           </div>
           <div className="social-media">
-            <img className="social-media-icon" src={Image} alt="Missing img..."></img>
+            <a href="https://www.instagram.com/calvinhacks/"><img className="social-media-icon" src={Image} alt="Missing img..."></img></a>
             <img className="social-media-icon" src={Image} alt="Missing img..."></img>
             <img className="social-media-icon" src={Image} alt="Missing img..."></img>
           </div>
