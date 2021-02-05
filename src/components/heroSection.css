@@ -7,7 +7,7 @@ video {
 }
   
 .hero-container {
-  background: maroon;
+  background: url('../images/beach.png') center center/cover no-repeat;
   height: 100vh;
   width: 100%;
   display: flex;

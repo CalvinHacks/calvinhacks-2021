@@ -1,6 +1,10 @@
+.faq-container {
+    background: url('../images/mountain.png') center center/cover no-repeat;
+}
 
 .faqs {
-    margin: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .title {
@@ -27,6 +31,7 @@ p.title {
 }
 
 .faqs-content .faq-box {
+    background-color: #CE725E;
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 12px;
