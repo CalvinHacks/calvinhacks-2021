@@ -3,7 +3,7 @@ import React from "react";
 
 // Import custom components
 import Button from "./button";
-import Logo from "../images/logo.png";
+import Logo from "../images/logo-noBG.png";
 
 // Import styles
 import styles from "./css/heroSection.module.css";
@@ -12,7 +12,7 @@ export default function HeroSection() {
   return (
     <div className={styles.heroContainer}>
       <div className={styles.logoContainer}>
-        <img src={Logo} />
+        <img src={Logo} alt="" />
       </div>
       <div className={styles.textContainer}>
         <h1>Devos Communication Center</h1>
