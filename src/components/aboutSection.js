@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import "./aboutSection.css";
+import "./css/aboutSection.css";
 
 export default function AboutSection() {
   return (

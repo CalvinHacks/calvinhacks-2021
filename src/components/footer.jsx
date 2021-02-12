@@ -1,41 +1,44 @@
+// Standard imports
 import React from "react";
-import "./footer.css";
+
+// Import styles
+import styles from "./css/footer.module.css";
 
 // Footer from https://www.youtube.com/watch?v=g459Eia-bxw&t=8s
 function Footer () {
   return (
-    <div className="main-footer">
-      <div className="containter">
-        <div className="row">
+    <div className={styles.mainFooter}>
+      <div className={styles.container}>
+        <div className={styles.row}>
           {/* Column1 */}
-          <div className="col">
+          <div className={styles.col}>
             <h2>Testing1</h2>
-            <ul className="lists">
+            <ul className={styles.lists}>
               <li>Apple</li>
               <li>Paer</li>
               <li>Strawberry</li>
             </ul>
           </div>
           {/* Column2 */}
-          <div className="col">
+          <div className={styles.col}>
             <h2>Testing2</h2>
-            <ul className="lists">
+            <ul className={styles.lists}>
               <li>Apple</li>
               <li>Paer</li>
               <li>Strawberry</li>
             </ul>
           </div>
           {/* Column3 */}
-          <div className="col">
+          <div className={styles.col}>
             <h2>Testing3</h2>
-            <ul className="lists">
+            <ul className={styles.lists}>
               <li>Apple</li>
               <li>Paer</li>
               <li>Strawberry</li>
             </ul>
           </div>
         </div>
-        <div class="rights">
+        <div class={styles.rights}>
             <p>© 2021 CalvinHacks | All rights reserved</p>
           </div>
       </div>
