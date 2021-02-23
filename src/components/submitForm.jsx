@@ -33,14 +33,12 @@ class submitForm extends Component {
     constructor(props) {
         super(props);
 
-        this.allergen = [];
-
         this.state = {
           firstName: '',
           lastName: '',
           email: '',
           major: '',
-          allergy: []
+          allergy: ''
         };
 
         // Firebase configuration setting
@@ -177,8 +175,17 @@ class submitForm extends Component {
                       value={this.state.major}
                     />
                   </Grid>
-                  <Grid item xs={12}></Grid>
-                  <AllergyForm/>
+                  <Grid item xs={12}>
+                                        <TextField
+                      variant="outlined"
+                      fullWidth
+                      name="allergy"
+                      label="Alleric foods (comma separated)"
+                      id="allergy"
+                      onChange={this.updateInput}
+                      value={this.state.major}
+                    />
+                  </Grid>
                   <Grid item xs={12}></Grid>
                 </Grid>
                 <Button
@@ -193,9 +200,6 @@ class submitForm extends Component {
                 </Button>
               </form>
             </div>
-            <Box mt={5}>
-              <Copyright />
-            </Box>
           </Container>
         );
     }
