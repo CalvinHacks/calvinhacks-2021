@@ -1,0 +1,62 @@
+.mainFooter{
+    background-color:rgba(211, 197, 95, 0.857);
+    display:flex;
+    flex-direction: column;
+    min-height: 1vh;
+    margin-top: 3em;
+}
+
+.rights {
+    background-color: maroon;
+    text-align: center;
+    color:white;
+}
+
+.socialMediaIcon{
+    height:32px;
+    width:32px;
+}
+
+.info ul {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.info li {
+    font-family: brandon-grotesque, sans-serif;
+    color:white;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    margin-left: 5vh;
+    list-style-type: none;
+}
+
+.info a {
+    font-family: brandon-grotesque, sans-serif;
+    color:white;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.follow {
+    font-family: brandon-grotesque, sans-serif;
+    color:white;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+
+.defaultFont {
+    font-family: brandon-grotesque, sans-serif;
+    color:white;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+
+a:hover{
+    color:gold;
+}

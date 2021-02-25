@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Schedule from "./pages/Schedule";
 import FAQ from "./pages/FAQ";
 import Footer from "./components/footer";
+import SubmitForm from "./components/submitForm";
 
 export default function App() {
   return (
@@ -17,6 +18,9 @@ export default function App() {
           <Route path="/schedule" exact component={Schedule} />
           <Route path="/faq" exact component={FAQ} />
         </Switch>
+        <div>
+          <SubmitForm />
+        </div>
         <div>
           <Footer />
         </div>

@@ -1,30 +1,26 @@
 import React from "react";
-import "./button.css";
 
-const STYLES = ["btn--primary", "btn--outline"];
+// Import styles
+import styles from "./css/button.module.css";
 
-const SIZES = ["btn--medium", "btn--large"];
-
-export const Button = ({
-  children,
-  type,
-  onClick,
-  buttonStyle,
-  buttonSize,
-}) => {
-  const checkButtonStyle = STYLES.includes(buttonStyle)
-    ? buttonStyle
-    : STYLES[0];
-
-  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+export default function Button({ children, buttonStyle, type, onClick }) {
+  /*************************************************
+   * checkButtonSize()
+   *
+   * Checks if the buttonSize prop passed to Button
+   * is contained in SIZES. If so, buttonSize
+   * remains as is. If not, buttonSize defaults to
+   * "btnMedium".
+   *************************************************/
+  const getStyle = () => {
+    if (buttonStyle === "sign-up") return styles.signUpButton;
+    else if (buttonStyle === "sponsor") return styles.sponsorButton;
+    else return styles.defaultButton;
+  };
 
   return (
-    <button
-      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-      onClick={onClick}
-      type={type}
-    >
+    <button className={getStyle} onClick={onClick} type={type}>
       {children}
     </button>
   );
-};
+}

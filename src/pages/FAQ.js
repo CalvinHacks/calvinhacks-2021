@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../App.css";
+
+// Import styles
 import "../pages/FAQ.css";
 
 function FAQ() {
