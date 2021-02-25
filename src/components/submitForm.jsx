@@ -38,7 +38,8 @@ class submitForm extends Component {
           lastName: '',
           email: '',
           major: '',
-          allergy: ''
+          allergy: '',
+          fileName: ''
         };
 
         // Firebase configuration setting
@@ -58,7 +59,11 @@ class submitForm extends Component {
         if (!firebase.apps.length) {
             firebase.initializeApp(config);
         }
-      } 
+      }
+    
+    onChange = e => {
+      this.setState({fileName: e.target.files[0]});
+    }
 
     updateInput = e => {
       this.setState({
@@ -68,6 +73,7 @@ class submitForm extends Component {
 
     addUser = e => {
         e.preventDefault();
+        const storage = firebase.storage().ref();
         const db = firebase.firestore();
         db.settings({
           timestampsInSnapshots: true
@@ -78,17 +84,24 @@ class submitForm extends Component {
             lastName: this.state.lastName,
             email: this.state.email,
             major: this.state.major,
-            allergy: []
+            allergy: this.state.allergy
         }).catch((error) => {
             alert("e-mail address already exist");
         });
+
+        const file = this.state.fileName
+        const fileRef = storage.child(file.name);
+        fileRef.put(file).then((snapshot) => {
+          alert("file successfully uploaded")
+        })
 
         this.setState({
             firstName: '',
             lastName: '',
             email: '',
             major: '',
-            allergy: []
+            allergy: '',
+            fileName: ''
         });
       };
 
@@ -176,17 +189,21 @@ class submitForm extends Component {
                     />
                   </Grid>
                   <Grid item xs={12}>
-                                        <TextField
-                      variant="outlined"
-                      fullWidth
-                      name="allergy"
-                      label="Alleric foods (comma separated)"
-                      id="allergy"
-                      onChange={this.updateInput}
-                      value={this.state.major}
-                    />
+                    <TextField
+                        variant="outlined"
+                        required
+                        fullWidth
+                        name="allergy"
+                        label="Allergy"
+                        id="allergy"
+                        onChange={this.updateInput}
+                        value={this.state.allergy}
+                      />
                   </Grid>
-                  <Grid item xs={12}></Grid>
+                  <Grid item xs={12}>
+                    <input type="file" onChange = {this.onChange}/>
+                  </Grid>
+                  <Grid item xs={12}/>
                 </Grid>
                 <Button
                   type="submit"
@@ -200,6 +217,9 @@ class submitForm extends Component {
                 </Button>
               </form>
             </div>
+            <Box mt={5}>
+              <Copyright />
+            </Box>
           </Container>
         );
     }
