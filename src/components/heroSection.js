@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import custom components
-import Button from "./button";
+import LocalButton from "./localButton";
 import Logo from "../images/logo-noBG.png";
 
 // Import styles
@@ -18,18 +18,14 @@ export default function HeroSection() {
         <h1>Devos Communication Center</h1>
         <p>March 26-27</p>
         <div className={styles.heroBtns}>
-          <a
-            href="https://my.mlh.io/oauth/authorize?client_id=ypzioIbsUMnyoDOo0VfrnFhxPrUvwouAbSuxGnnKrZA&redirect_uri=http%3A%2F%2Fcalvinhacks.github.io%2Fcalvinhacks-2021%2F&response_type=token"
-            target="_self"
-            rel="noopener noreferrer"
-          >
-            <Button buttonStyle="sign-up">Sign Up</Button>
-          </a>
+          <LocalButton buttonStyle="sign-up" to="/sign-up">
+            Sign Up
+          </LocalButton>
 
           {/* Put link to sponsorship packet */}
-          <Button className={styles.btns} buttonStyle="sponsor">
+          <LocalButton className={styles.btns} buttonStyle="sponsor">
             Sponsor Us
-          </Button>
+          </LocalButton>
         </div>
       </div>
     </div>

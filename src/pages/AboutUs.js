@@ -1,13 +1,12 @@
 import React from "react";
 
 // Import custom components
-import AboutSection from "../components/aboutSection";
-import styles from "./css/scheduleSection.module.css";
+import AboutUsSection from "../components/aboutUsSection";
 
 export default function AboutUs() {
-    return (
-        <>
-        <AboutSection />
-      </>
-    );
+  return (
+    <>
+      <AboutUsSection />
+    </>
+  );
 }

@@ -16,7 +16,7 @@ function Footer () {
         <Grid item xs = {7}>
           <div className={styles.info}>
             <ul>
-              <li>CONTACT EMAIL: <a href="https://www.google.com">calvinhacks@placeholder.com</a></li>
+              <li>CONTACT EMAIL: <a href="mailto:hacks@calvin.edu">hacks@calvin.edu</a></li>
               <li>MORE INFO</li>
               <li><a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>•<a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Privacy Policy</a></li>
             </ul>

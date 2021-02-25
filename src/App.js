@@ -5,8 +5,9 @@ import NavBar from "./components/navBar";
 import Home from "./pages/Home";
 import Schedule from "./pages/Schedule";
 import FAQ from "./pages/FAQ";
+import AboutUs from "./pages/AboutUs";
+import SignUp from "./pages/SignUp";
 import Footer from "./components/footer";
-import SubmitForm from "./components/submitForm";
 
 export default function App() {
   return (
@@ -14,13 +15,12 @@ export default function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route path={["/", "/calvinhacks-2021"]} exact component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/schedule" exact component={Schedule} />
           <Route path="/faq" exact component={FAQ} />
+          <Route path="/about-us" exact component={AboutUs} />
+          <Route path="/sign-up" exact component={SignUp} />
         </Switch>
-        <div>
-          <SubmitForm />
-        </div>
         <div>
           <Footer />
         </div>

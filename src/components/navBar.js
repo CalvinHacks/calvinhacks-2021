@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 // Import custom components
-import Button from "./button";
+import LocalButton from "./localButton";
 import { Link } from "react-router-dom";
 
 // Import styles
@@ -69,9 +69,24 @@ export default function NavBar() {
                 FAQ
               </Link>
             </li>
+            <li className={styles.navItem}>
+              <Link
+                to="/about-us"
+                className={styles.navLinks}
+                onClick={closeMobileMenu}
+              >
+                About Us
+              </Link>
+            </li>
 
-            <li>
-              <a
+            {/* <li>
+              <Button
+                className={styles.navLinksMobile}
+                onClick={closeMobileMenu}
+              >
+                Sign Up
+              </Button> */}
+            {/* <a
                 href="https://my.mlh.io/oauth/authorize?client_id=ypzioIbsUMnyoDOo0VfrnFhxPrUvwouAbSuxGnnKrZA&redirect_uri=http%3A%2F%2Fcalvinhacks.github.io%2Fcalvinhacks-2021%2F&response_type=token"
                 target="_self"
                 rel="noopener noreferrer"
@@ -79,19 +94,18 @@ export default function NavBar() {
                 onClick={closeMobileMenu}
               >
                 Sign Up
-              </a>
-            </li>
+              </a> */}
+            {/* </li> */}
           </ul>
+
           {button && (
-            <a
-              href="https://my.mlh.io/oauth/authorize?client_id=ypzioIbsUMnyoDOo0VfrnFhxPrUvwouAbSuxGnnKrZA&redirect_uri=http%3A%2F%2Fcalvinhacks.github.io%2Fcalvinhacks-2021%2F&response_type=token"
-              target="_self"
-              rel="noopener noreferrer"
+            <LocalButton
+              className={styles.btns}
+              buttonStyle="btnOutline"
+              to="/sign-up"
             >
-              <Button className={styles.btns} buttonStyle="btnOutline">
-                SIGN UP
-              </Button>
-            </a>
+              SIGN UP
+            </LocalButton>
           )}
         </div>
       </nav>

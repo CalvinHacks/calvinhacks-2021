@@ -11,17 +11,19 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import firebase from 'firebase';
-import firestore from '@firebase/firestore';
-import { CheckBox } from '@material-ui/icons';
-import AllergyForm from './allergyForm'
+// import firestore from '@firebase/firestore';
+// import { CheckBox } from '@material-ui/icons';
+// import AllergyForm from './allergyForm'
+
+// import styles from './css/signUpForm.module.css'
 
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      <Link color="inherit" href="http://www.calvinhacks.org">
+        CalvinHacks
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -29,7 +31,7 @@ function Copyright() {
   );
 }
 
-class submitForm extends Component {
+class SignUpForm extends Component {
     constructor(props) {
         super(props);
 
@@ -38,7 +40,7 @@ class submitForm extends Component {
           lastName: '',
           email: '',
           major: '',
-          allergy: '',
+          allergies: '',
           fileName: ''
         };
 
@@ -84,15 +86,15 @@ class submitForm extends Component {
             lastName: this.state.lastName,
             email: this.state.email,
             major: this.state.major,
-            allergy: this.state.allergy
+            allergies: this.state.allergies
         }).catch((error) => {
-            alert("e-mail address already exist");
+            alert("E-mail address already exist");
         });
 
         const file = this.state.fileName
         const fileRef = storage.child(file.name);
         fileRef.put(file).then((snapshot) => {
-          alert("file successfully uploaded")
+          alert("File successfully uploaded")
         })
 
         this.setState({
@@ -100,7 +102,7 @@ class submitForm extends Component {
             lastName: '',
             email: '',
             major: '',
-            allergy: '',
+            allergies: '',
             fileName: ''
         });
       };
@@ -130,8 +132,9 @@ class submitForm extends Component {
             <Container component="main" maxWidth="xs">
             <CssBaseline />
             <div className={makeStyles.paper}>
+              {/* <h1 className={styles.signUpText}>Sign up</h1> */}
               <Typography component="h1" variant="h5">
-                Survey
+                Sign up
               </Typography>
               <form className={makeStyles.form} noValidate>
                 <Grid container spacing={2}>
@@ -191,13 +194,12 @@ class submitForm extends Component {
                   <Grid item xs={12}>
                     <TextField
                         variant="outlined"
-                        required
                         fullWidth
-                        name="allergy"
-                        label="Allergy"
-                        id="allergy"
+                        name="allergies"
+                        label="Allergies"
+                        id="allergies"
                         onChange={this.updateInput}
-                        value={this.state.allergy}
+                        value={this.state.allergies}
                       />
                   </Grid>
                   <Grid item xs={12}>
@@ -225,5 +227,5 @@ class submitForm extends Component {
     }
 }
 
-export default submitForm;
+export default SignUpForm;
 
