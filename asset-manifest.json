@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/calvinhacks-2021/static/css/main.f330ff9c.chunk.css",
-    "main.js": "/calvinhacks-2021/static/js/main.8530599e.chunk.js",
-    "main.js.map": "/calvinhacks-2021/static/js/main.8530599e.chunk.js.map",
-    "runtime-main.js": "/calvinhacks-2021/static/js/runtime-main.ff601161.js",
-    "runtime-main.js.map": "/calvinhacks-2021/static/js/runtime-main.ff601161.js.map",
-    "static/js/2.6c3f34e4.chunk.js": "/calvinhacks-2021/static/js/2.6c3f34e4.chunk.js",
-    "static/js/2.6c3f34e4.chunk.js.map": "/calvinhacks-2021/static/js/2.6c3f34e4.chunk.js.map",
-    "static/js/3.3472c2c3.chunk.js": "/calvinhacks-2021/static/js/3.3472c2c3.chunk.js",
-    "static/js/3.3472c2c3.chunk.js.map": "/calvinhacks-2021/static/js/3.3472c2c3.chunk.js.map",
-    "index.html": "/calvinhacks-2021/index.html",
-    "static/css/main.f330ff9c.chunk.css.map": "/calvinhacks-2021/static/css/main.f330ff9c.chunk.css.map",
-    "static/js/2.6c3f34e4.chunk.js.LICENSE.txt": "/calvinhacks-2021/static/js/2.6c3f34e4.chunk.js.LICENSE.txt",
-    "static/media/heroSection.css": "/calvinhacks-2021/static/media/beach.36f6968e.png",
-    "static/media/city.052dc035.png": "/calvinhacks-2021/static/media/city.052dc035.png",
-    "static/media/FAQ.css": "/calvinhacks-2021/static/media/mountain.5e8acd74.png"
+    "main.css": "/static/css/main.140a8c21.chunk.css",
+    "main.js": "/static/js/main.e18d51e1.chunk.js",
+    "main.js.map": "/static/js/main.e18d51e1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ea07e8be.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ea07e8be.js.map",
+    "static/js/2.f1f7bd16.chunk.js": "/static/js/2.f1f7bd16.chunk.js",
+    "static/js/2.f1f7bd16.chunk.js.map": "/static/js/2.f1f7bd16.chunk.js.map",
+    "static/js/3.c81883ef.chunk.js": "/static/js/3.c81883ef.chunk.js",
+    "static/js/3.c81883ef.chunk.js.map": "/static/js/3.c81883ef.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.140a8c21.chunk.css.map": "/static/css/main.140a8c21.chunk.css.map",
+    "static/js/2.f1f7bd16.chunk.js.LICENSE.txt": "/static/js/2.f1f7bd16.chunk.js.LICENSE.txt",
+    "static/media/Jason.9afb5a84.jpg": "/static/media/Jason.9afb5a84.jpg",
+    "static/media/city.ae3b3396.png": "/static/media/city.ae3b3396.png",
+    "static/media/instagram.75e0546a.png": "/static/media/instagram.75e0546a.png",
+    "static/media/heroSection.module.css": "/static/media/landing.3bb3a035.png",
+    "static/media/logo-noBG.2fb65817.png": "/static/media/logo-noBG.2fb65817.png",
+    "static/media/FAQ.css": "/static/media/mountain.2896a40d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ff601161.js",
-    "static/js/2.6c3f34e4.chunk.js",
-    "static/css/main.f330ff9c.chunk.css",
-    "static/js/main.8530599e.chunk.js"
+    "static/js/runtime-main.ea07e8be.js",
+    "static/js/2.f1f7bd16.chunk.js",
+    "static/css/main.140a8c21.chunk.css",
+    "static/js/main.e18d51e1.chunk.js"
   ]
 }
