@@ -1,6 +1,7 @@
 .scheduleContainer {
   display: flex;
   flex-direction: row;
+  background-image: url("../../images/landing.png");
 }
 
 .image {
@@ -11,6 +12,7 @@ img {
   display: block;
   height: auto;
   width: 75%;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }

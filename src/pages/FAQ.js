@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import image from "../images/mountain.png";
 
 // Import styles
 import "../pages/FAQ.css";
@@ -80,6 +81,11 @@ function FAQ() {
 
   return (
     <div className="faq-container">
+      <span className="white">aaa</span>
+      <div className="image-container">
+        <img src={image} className="image"></img>
+      </div>
+
       <div className="faqs">
         <h1 className="title">FAQ</h1>
         <p className="title">Frequently Asked Questions</p>
