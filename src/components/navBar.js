@@ -69,6 +69,7 @@ export default function NavBar() {
                 FAQ
               </Link>
             </li> */}
+
             {/* <li className={styles.navItem}>
               <Link
                 to="/about-us"
@@ -80,13 +81,13 @@ export default function NavBar() {
             </li> */}
 
             {/* <li>
-              <Button
+              <LocalButton
                 className={styles.navLinksMobile}
                 onClick={closeMobileMenu}
               >
                 Sign Up
-              </Button> */}
-            {/* <a
+              </LocalButton>
+              <a
                 href="https://my.mlh.io/oauth/authorize?client_id=ypzioIbsUMnyoDOo0VfrnFhxPrUvwouAbSuxGnnKrZA&redirect_uri=http%3A%2F%2Fcalvinhacks.github.io%2Fcalvinhacks-2021%2F&response_type=token"
                 target="_self"
                 rel="noopener noreferrer"
@@ -94,8 +95,8 @@ export default function NavBar() {
                 onClick={closeMobileMenu}
               >
                 Sign Up
-              </a> */}
-            {/* </li> */}
+              </a>
+            </li> */}
           </ul>
 
           {button && (

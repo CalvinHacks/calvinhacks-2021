@@ -16,7 +16,7 @@ export default function ScheduleSection() {
           <img src={City} alt="" />
         </div>
         <div className={styles.scheduleSection}>
-          <h1 className={styles.title}>Trip Itinerary</h1>
+          <h1 className={styles.title}>Itinerary</h1>
           <ScheduleTable />
         </div>
       </div>

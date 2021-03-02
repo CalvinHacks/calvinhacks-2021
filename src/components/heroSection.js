@@ -23,16 +23,7 @@ export default function HeroSection() {
           <LocalButton buttonStyle="sign-up" to="/sign-up">
             Sign Up
           </LocalButton>
-
-          {/* Put link to sponsorship packet */}
-          {/* <LocalButton
-            className={styles.btns}
-            buttonStyle="sponsor"
-            to="/sponsorship-packet-2021"
-          >
-            Sponsor Us
-          </LocalButton> */}
-          <OutsideButton href={SponsorshipPacket}>Sponsor us</OutsideButton>
+          {/* <OutsideButton href={SponsorshipPacket}>Sponsor us</OutsideButton> */}
         </div>
       </div>
     </div>

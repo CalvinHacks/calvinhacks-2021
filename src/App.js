@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/navBar";
 import Home from "./pages/Home";
 import Schedule from "./pages/Schedule";
-// import FAQ from "./pages/FAQ";
-// import AboutUs from "./pages/AboutUs";
+import FAQ from "./pages/FAQ";
+import AboutUs from "./pages/AboutUs";
 import SignUp from "./pages/SignUp";
 import Footer from "./components/footer";
 
@@ -17,11 +17,11 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/schedule" component={Schedule} />
-          {/* <Route path="/faq" exact component={FAQ} /> */}
-          {/* <Route path="/about-us" exact component={AboutUs} /> */}
+          <Route path="/faq" exact component={FAQ} />
+          <Route path="/about-us" exact component={AboutUs} />
           <Route exact path="/sign-up" component={SignUp} />
         </Switch>
-        <div>
+        <div className="footerContainer">
           <Footer />
         </div>
       </Router>

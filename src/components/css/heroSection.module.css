@@ -41,10 +41,6 @@
   margin-top: 32px;
 }
 
-.heroBtns .btn {
-  margin: 6px;
-}
-
 @media screen and (max-width: 960px) {
   .heroContainer > h1 {
     font-size: 70px;
