@@ -41,7 +41,7 @@ export default function NavBar() {
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
 
-          <ul className={click ? styles.navMenu.active : styles.navMenu}>
+          <ul className={click ? styles.navMenuActive : styles.navMenu}>
             <li className={styles.navItem}>
               <Link
                 to="/"

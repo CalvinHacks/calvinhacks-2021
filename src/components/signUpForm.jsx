@@ -11,19 +11,17 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import firebase from 'firebase';
-// import firestore from '@firebase/firestore';
-// import { CheckBox } from '@material-ui/icons';
-// import AllergyForm from './allergyForm'
+import firestore from '@firebase/firestore';
+import { CheckBox } from '@material-ui/icons';
+import AllergyForm from './allergyForm'
 
-// import styles from './css/signUpForm.module.css'
-
-
+// Create copyright 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="http://www.calvinhacks.org">
-        CalvinHacks
+      <Link color="inherit" href="https://material-ui.com/">
+        Your Website
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -31,20 +29,22 @@ function Copyright() {
   );
 }
 
-class SignUpForm extends Component {
+class submitForm extends Component {
     constructor(props) {
         super(props);
 
+        // empty state
         this.state = {
           firstName: '',
           lastName: '',
           email: '',
           major: '',
-          allergies: '',
+          allergy: '',
           fileName: ''
         };
 
         // Firebase configuration setting
+        // TODO: place config. information on the separate component for the security purpose
         const config = {
             apiKey: "AIzaSyDvYD8EsP5UEgbGoHAIeKi82gD3psi3nMw",
             authDomain: "calvinhacks-a2378.firebaseapp.com",
@@ -63,48 +63,61 @@ class SignUpForm extends Component {
         }
       }
     
+    // Function used to send uploaded file information to the state
     onChange = e => {
       this.setState({fileName: e.target.files[0]});
     }
 
+    // Send values from the text-field to a state object
     updateInput = e => {
       this.setState({
           [e.target.name]: e.target.value
       });
     }
 
+    // Sending information to the firebase
     addUser = e => {
         e.preventDefault();
+
+        // Initialize firebase DB and storage
         const storage = firebase.storage().ref();
         const db = firebase.firestore();
+
+        // Change firestore settings
         db.settings({
           timestampsInSnapshots: true
         });
 
+        // Send information in the state object to the firebase
         db.collection("calvinHacks2021").doc(this.state.email).set({
             firstName: this.state.firstName,
             lastName: this.state.lastName,
             email: this.state.email,
             major: this.state.major,
-            allergies: this.state.allergies
+            allergy: this.state.allergy
         }).catch((error) => {
-            alert("E-mail address already exist");
+            alert("e-mail address already exist"); // Catches duplicate e-mail address
         });
 
-        const file = this.state.fileName
-        const fileRef = storage.child(file.name);
-        fileRef.put(file).then((snapshot) => {
-          alert("File successfully uploaded")
-        })
-
+        // Resets state object after sending information to the firebase
         this.setState({
             firstName: '',
             lastName: '',
             email: '',
             major: '',
-            allergies: '',
+            allergy: '',
             fileName: ''
         });
+
+      // upload files to the firebase storage
+      if (this.state.fileName !== ''){ // Checks if use have uploaded any files
+          const file = this.state.fileName;
+          alert(file);
+          const fileRef = storage.child(file.name);
+          fileRef.put(file).then((snapshot) => {
+            alert("file successfully uploaded")
+          })
+        }
       };
 
     makeStyles = ((theme) => ({
@@ -132,9 +145,8 @@ class SignUpForm extends Component {
             <Container component="main" maxWidth="xs">
             <CssBaseline />
             <div className={makeStyles.paper}>
-              {/* <h1 className={styles.signUpText}>Sign up</h1> */}
               <Typography component="h1" variant="h5">
-                Sign up
+                Sign Up
               </Typography>
               <form className={makeStyles.form} noValidate>
                 <Grid container spacing={2}>
@@ -171,7 +183,7 @@ class SignUpForm extends Component {
                       required
                       fullWidth
                       id="email"
-                      label="Calvin Email Address"
+                      label="Student Email Address"
                       name="email"
                       type="email"
                       autoComplete="email"
@@ -195,12 +207,15 @@ class SignUpForm extends Component {
                     <TextField
                         variant="outlined"
                         fullWidth
-                        name="allergies"
+                        name="allergy"
                         label="Allergies"
-                        id="allergies"
+                        id="allergy"
                         onChange={this.updateInput}
-                        value={this.state.allergies}
+                        value={this.state.allergy}
                       />
+                  </Grid>
+                  <Grid item>
+                    <p>Upload a resume for sponsors to view!</p>
                   </Grid>
                   <Grid item xs={12}>
                     <input type="file" onChange = {this.onChange}/>
@@ -227,5 +242,5 @@ class SignUpForm extends Component {
     }
 }
 
-export default SignUpForm;
+export default submitForm;
 
