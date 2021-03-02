@@ -83,7 +83,7 @@ function FAQ() {
     <div className="faq-container">
       <span className="white">aaa</span>
       <div className="image-container">
-        <img src={image} className="image"></img>
+        <img src={image} alt="mountain" className="image"></img>
       </div>
 
       <div className="faqs">

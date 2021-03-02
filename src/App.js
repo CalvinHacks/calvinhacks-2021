@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/navBar";
 import Home from "./pages/Home";
 import Schedule from "./pages/Schedule";
-import FAQ from "./pages/FAQ";
-import AboutUs from "./pages/AboutUs";
+// import FAQ from "./pages/FAQ";
+// import AboutUs from "./pages/AboutUs";
 import SignUp from "./pages/SignUp";
 import Footer from "./components/footer";
 
