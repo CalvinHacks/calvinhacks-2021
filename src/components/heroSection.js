@@ -3,7 +3,9 @@ import React from "react";
 
 // Import custom components
 import LocalButton from "./localButton";
+import OutsideButton from "./outsideButton";
 import Logo from "../images/logo-noBG.png";
+import SponsorshipPacket from "../pages/sponsorship_doc_2021.pdf";
 
 // Import styles
 import styles from "./css/heroSection.module.css";
@@ -23,9 +25,14 @@ export default function HeroSection() {
           </LocalButton>
 
           {/* Put link to sponsorship packet */}
-          <LocalButton className={styles.btns} buttonStyle="sponsor">
+          {/* <LocalButton
+            className={styles.btns}
+            buttonStyle="sponsor"
+            to="/sponsorship-packet-2021"
+          >
             Sponsor Us
-          </LocalButton>
+          </LocalButton> */}
+          <OutsideButton href={SponsorshipPacket}>Sponsor us</OutsideButton>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        CalvinHacks
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -105,7 +105,7 @@ class submitForm extends Component {
       [e.target.name]: e.target.checked,
       showShirtOption: e.target.checked,
     });
-    if (!this.state.showShirtOption) {
+    if (!e.target.checked) {
       this.setState({
         shirtSize: "none",
       });
@@ -159,7 +159,6 @@ class submitForm extends Component {
     if (this.state.fileName !== "") {
       // Checks if user has uploaded any files
       const file = this.state.fileName;
-      alert(file);
       const fileRef = storage.child(file.name);
       fileRef.put(file).then((snapshot) => {
         alert("File successfully uploaded!");
@@ -290,7 +289,7 @@ class submitForm extends Component {
                       <p>Select a shirt size (adult sizes only):</p>
                     </Grid>
                     <Grid item>
-                      <select name="shirtSize" id="shirtSize">
+                      <select name="shirtSize" id="shirtSize" onChange={this.updateInput}>
                         <option value="none"></option>
                         <option value="small">S</option>
                         <option value="medium">M</option>

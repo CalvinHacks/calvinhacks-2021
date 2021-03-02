@@ -12,14 +12,14 @@ import Footer from "./components/footer";
 export default function App() {
   return (
     <>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <NavBar />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/schedule" exact component={Schedule} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/schedule" component={Schedule} />
           {/* <Route path="/faq" exact component={FAQ} /> */}
           {/* <Route path="/about-us" exact component={AboutUs} /> */}
-          <Route path="/sign-up" exact component={SignUp} />
+          <Route exact path="/sign-up" component={SignUp} />
         </Switch>
         <div>
           <Footer />
