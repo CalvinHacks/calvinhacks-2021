@@ -1,29 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.f57d8c4c.chunk.css",
-    "main.js": "/static/js/main.132ce7ea.chunk.js",
-    "main.js.map": "/static/js/main.132ce7ea.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1a1cc489.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1a1cc489.js.map",
-    "static/js/2.e4020201.chunk.js": "/static/js/2.e4020201.chunk.js",
-    "static/js/2.e4020201.chunk.js.map": "/static/js/2.e4020201.chunk.js.map",
-    "static/js/3.7747b294.chunk.js": "/static/js/3.7747b294.chunk.js",
-    "static/js/3.7747b294.chunk.js.map": "/static/js/3.7747b294.chunk.js.map",
+    "main.css": "/static/css/main.204b82ae.chunk.css",
+    "main.js": "/static/js/main.9e3a77cf.chunk.js",
+    "main.js.map": "/static/js/main.9e3a77cf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2b21e6cd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2b21e6cd.js.map",
+    "static/js/2.e0c050ea.chunk.js": "/static/js/2.e0c050ea.chunk.js",
+    "static/js/2.e0c050ea.chunk.js.map": "/static/js/2.e0c050ea.chunk.js.map",
+    "static/js/3.6a80d1d3.chunk.js": "/static/js/3.6a80d1d3.chunk.js",
+    "static/js/3.6a80d1d3.chunk.js.map": "/static/js/3.6a80d1d3.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.f57d8c4c.chunk.css.map": "/static/css/main.f57d8c4c.chunk.css.map",
-    "static/js/2.e4020201.chunk.js.LICENSE.txt": "/static/js/2.e4020201.chunk.js.LICENSE.txt",
-    "static/media/Jason.9afb5a84.jpg": "/static/media/Jason.9afb5a84.jpg",
-    "static/media/beach.afef3602.png": "/static/media/beach.afef3602.png",
+    "static/css/main.204b82ae.chunk.css.map": "/static/css/main.204b82ae.chunk.css.map",
+    "static/js/2.e0c050ea.chunk.js.LICENSE.txt": "/static/js/2.e0c050ea.chunk.js.LICENSE.txt",
     "static/media/city.ae3b3396.png": "/static/media/city.ae3b3396.png",
     "static/media/instagram.75e0546a.png": "/static/media/instagram.75e0546a.png",
-    "static/media/FAQ.css": "/static/media/landing.3bb3a035.png",
+    "static/media/scheduleSection.module.css": "/static/media/landing.3bb3a035.png",
     "static/media/logo-noBG.2fb65817.png": "/static/media/logo-noBG.2fb65817.png",
-    "static/media/mountain.2896a40d.png": "/static/media/mountain.2896a40d.png"
+    "static/media/sponsorship_doc_2021.caf70acd.pdf": "/static/media/sponsorship_doc_2021.caf70acd.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.1a1cc489.js",
-    "static/js/2.e4020201.chunk.js",
-    "static/css/main.f57d8c4c.chunk.css",
-    "static/js/main.132ce7ea.chunk.js"
+    "static/js/runtime-main.2b21e6cd.js",
+    "static/js/2.e0c050ea.chunk.js",
+    "static/css/main.204b82ae.chunk.css",
+    "static/js/main.9e3a77cf.chunk.js"
   ]
 }
