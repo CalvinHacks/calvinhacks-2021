@@ -60,7 +60,7 @@ export default function NavBar() {
                 Schedule
               </Link>
             </li>
-            <li className={styles.navItem}>
+            {/* <li className={styles.navItem}>
               <Link
                 to="/faq"
                 className={styles.navLinks}
@@ -68,8 +68,8 @@ export default function NavBar() {
               >
                 FAQ
               </Link>
-            </li>
-            <li className={styles.navItem}>
+            </li> */}
+            {/* <li className={styles.navItem}>
               <Link
                 to="/about-us"
                 className={styles.navLinks}
@@ -77,7 +77,7 @@ export default function NavBar() {
               >
                 About Us
               </Link>
-            </li>
+            </li> */}
 
             {/* <li>
               <Button

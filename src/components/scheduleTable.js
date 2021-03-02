@@ -18,6 +18,7 @@ export default function ScheduleTable() {
       >
         Stay Tuned
       </Button> */}
+      <h2>Friday, March 26</h2>
       <table class={styles.schedule}>
         <thead>
           <tr>
@@ -25,13 +26,18 @@ export default function ScheduleTable() {
             <th>Event</th>
           </tr>
         </thead>
-        <ScheduleRow time="5:00 PM" event="Opening Ceremony" />
-        <ScheduleRow time="6:00 PM" event="Pep Talk by Brad" />
-        <ScheduleRow time="6:30 PM" event="Din Din" />
-        <ScheduleRow time="8:00 PM" event="Raspberry Pi Talk" />
-        <ScheduleRow time="9:00 PM" event="Flash Mob" />
-        <ScheduleRow time="10:00 PM" event="Calvin Startups" />
-        <ScheduleRow time="12:00 AM" event="Party is Over, Go Back to Dorms" />
+        <ScheduleRow time="6:00 PM" event="Opening Ceremony" />
+      </table>
+
+      <h2>Saturday, March 27</h2>
+      <table class={styles.schedule}>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Event</th>
+          </tr>
+        </thead>
+        <ScheduleRow time="5:00 PM" event="Closing Ceremony" />
       </table>
     </>
   );

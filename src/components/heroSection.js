@@ -15,7 +15,7 @@ export default function HeroSection() {
         <img src={Logo} alt="" />
       </div>
       <div className={styles.textContainer}>
-        <h1>Devos Communication Center</h1>
+        <h1>Devos Communication Center / Virtual</h1>
         <p>March 26-27</p>
         <div className={styles.heroBtns}>
           <LocalButton buttonStyle="sign-up" to="/sign-up">
