@@ -11,16 +11,18 @@ button {
 }
 
 .signUpButton {
+    color: #242424;
     background-color: var(--primary);
     color: #242424;
-    border: 1px solid var(--primary);
+    border: 1px solid #242424;
+    padding: 8px 20px;
+    font-size: 20px;
 }
 
 .sponsorButton {
     background-color: transparent;
-    color: #fff;
     padding: 8px 20px;
-    border: 1px solid var(--primary);
+    border: #242424;
     transition: all 0.3s ease-out;
 }
 
@@ -34,7 +36,7 @@ button {
     font-size: 20px
 }
 
-.btnMedium:hover, .btnLarge:hover {
+.signUpButton:hover {
     background: #F3CD00;
     color: #242424;
     --primary: #F3CD00;

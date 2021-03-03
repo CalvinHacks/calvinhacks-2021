@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import image from "../images/mountain.png";
+import Footer from "../components/footer";
 
 // Import styles
 import "../pages/FAQ.css";
@@ -95,33 +96,36 @@ function FAQ() {
   };
 
   return (
-    <div className="faq-container">
-      <span className="white">aaa</span>
-      <div className="image-container">
-        <img src={image} alt="mountain" className="image"></img>
-      </div>
-
-      <div className="faqs">
-        <h1 className="title">FAQ</h1>
-        <p className="title">Frequently Asked Questions</p>
-
-        <div className="faqs-content">
-          {faqs.map((faq, i) => (
-            <div
-              className={"faq-box " + (faq.open ? "open" : "")}
-              onClick={() => toggleFAQ(i)}
-            >
-              <div className="faq-question">{faq.question}</div>
-              <div className="faq-answer">{faq.answer}</div>
-            </div>
-          ))}
+    <>
+      <div className="faq-container">
+        <span className="white">aaa</span>
+        <div className="image-container">
+          <img src={image} alt="mountain" className="image"></img>
         </div>
-        <div>
-          If you have any other questions, suggestions, or concerns contact us
-          at <a href="mailto:hacks@calvin.edu">hacks@calvin.edu.</a>
+
+        <div className="faqs">
+          <h1 className="title">FAQ</h1>
+          <p className="title">Frequently Asked Questions</p>
+
+          <div className="faqs-content">
+            {faqs.map((faq, i) => (
+              <div
+                className={"faq-box " + (faq.open ? "open" : "")}
+                onClick={() => toggleFAQ(i)}
+              >
+                <div className="faq-question">{faq.question}</div>
+                <div className="faq-answer">{faq.answer}</div>
+              </div>
+            ))}
+          </div>
+          <div>
+            If you have any other questions, suggestions, or concerns contact us
+            at <a href="mailto:hacks@calvin.edu">hacks@calvin.edu.</a>
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 

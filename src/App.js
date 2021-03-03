@@ -21,9 +21,6 @@ export default function App() {
           <Route path="/about-us" exact component={AboutUs} />
           <Route exact path="/sign-up" component={SignUp} />
         </Switch>
-        <div className="footerContainer">
-          <Footer />
-        </div>
       </Router>
     </>
   );

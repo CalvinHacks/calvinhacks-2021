@@ -27,7 +27,7 @@ export default function LocalButton({
 
   return (
     <Link to={to}>
-      <button className={getStyle} onClick={onClick} type={type}>
+      <button className={styles.signUpButton} onClick={onClick} type={type}>
         {children}
       </button>
     </Link>

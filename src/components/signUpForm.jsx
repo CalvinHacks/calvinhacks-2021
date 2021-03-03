@@ -153,6 +153,8 @@ class submitForm extends Component {
       isGoing: false,
       shirtSize: "none",
       fileName: "",
+      showCheckbox: false,
+      showShirtOption: false,
     });
 
     // upload files to the firebase storage
@@ -286,7 +288,7 @@ class submitForm extends Component {
                 {this.state.showShirtOption && (
                   <>
                     <Grid item>
-                      <p>Select a shirt size (adult sizes only):</p>
+                      <p>Select a shirt size (adult unisex sizes only):</p>
                     </Grid>
                     <Grid item>
                       <select name="shirtSize" id="shirtSize" onChange={this.updateInput}>
