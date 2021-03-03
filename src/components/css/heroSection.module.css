@@ -41,6 +41,12 @@
   margin-top: 32px;
 }
 
+.btnDivider{
+  width: 2rem;
+  height: auto;
+  display: inline-block;
+}
+
 @media screen and (max-width: 960px) {
   .heroContainer > h1 {
     font-size: 70px;

@@ -3,13 +3,7 @@ import React from "react";
 // Import styles
 import styles from "./css/button.module.css";
 
-export default function LocalButton({
-  children,
-  buttonStyle,
-  type,
-  onClick,
-  href,
-}) {
+export default function LocalButton({ children, buttonStyle, onClick, href }) {
   /*************************************************
    * checkButtonSize()
    *
@@ -26,7 +20,7 @@ export default function LocalButton({
 
   return (
     <a href={href}>
-      <button className={getStyle} onClick={onClick} type={type}>
+      <button className={styles.sponsorButton} onClick={onClick}>
         {children}
       </button>
     </a>

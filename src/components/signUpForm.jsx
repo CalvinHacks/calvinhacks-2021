@@ -1,4 +1,4 @@
-// Template from https://material-ui.com/getting-started/templates/ (Sign up)
+// Sign-up template from https://material-ui.com/getting-started/templates/
 
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
@@ -11,10 +11,6 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import firebase from "firebase";
-// import firestore from '@firebase/firestore';
-// import { CheckBox } from "@material-ui/icons";
-// import FormControlLabel from "@material-ui/core/FormControlLabel";
-// import AllergyForm from './allergyForm'
 
 import styles from "./css/signUpForm.module.css";
 
@@ -48,7 +44,7 @@ class submitForm extends Component {
       fileName: "",
       // Dynamic component rendering
       showCheckbox: false,
-      showShirtOption: false,
+      // showShirtOption: false,
     };
 
     // Firebase configuration setting
@@ -92,8 +88,8 @@ class submitForm extends Component {
         this.setState({
           isGoing: false,
           showCheckbox: false,
-          showShirtOption: false,
-          shirtSize: "none",
+          // showShirtOption: false,
+          // shirtSize: "none",
         });
       }
     }
@@ -103,13 +99,13 @@ class submitForm extends Component {
   updateCheckbox = (e) => {
     this.setState({
       [e.target.name]: e.target.checked,
-      showShirtOption: e.target.checked,
+      // showShirtOption: e.target.checked,
     });
-    if (!e.target.checked) {
-      this.setState({
-        shirtSize: "none",
-      });
-    }
+    // if (!e.target.checked) {
+    //   this.setState({
+    //     shirtSize: "none",
+    //   });
+    // }
   };
 
   // Sending information to the firebase
@@ -137,10 +133,10 @@ class submitForm extends Component {
         major: this.state.major,
         allergy: this.state.allergy,
         isGoing: this.state.isGoing,
-        shirtSize: this.state.shirtSize,
+        // shirtSize: this.state.shirtSize,
       })
       .catch((error) => {
-        alert("E-mail address already exist"); // Catches duplicate e-mail address
+        alert("This e-mail address has already been used!"); // Catches duplicate e-mail address
       });
 
     // Resets state object after sending information to the firebase
@@ -151,10 +147,10 @@ class submitForm extends Component {
       major: "",
       allergy: "",
       isGoing: false,
-      shirtSize: "none",
+      // shirtSize: "none",
       fileName: "",
       showCheckbox: false,
-      showShirtOption: false,
+      // showShirtOption: false,
     });
 
     // upload files to the firebase storage
@@ -163,9 +159,12 @@ class submitForm extends Component {
       const file = this.state.fileName;
       const fileRef = storage.child(file.name);
       fileRef.put(file).then((snapshot) => {
-        alert("File successfully uploaded!");
+        alert("Resume successfully uploaded!");
       });
     }
+    // if(this.state.noError){
+    //   alert("Thank you for signing up for CalvinHacks 2021!")
+    // }
   };
 
   makeStyles = (theme) => ({
@@ -285,7 +284,8 @@ class submitForm extends Component {
                   </>
                 )}
 
-                {this.state.showShirtOption && (
+                {/* Shirt size option for future hackathons! */}
+                {/* {this.state.showShirtOption && (
                   <>
                     <Grid item>
                       <p>Select a shirt size (adult unisex sizes only):</p>
@@ -300,7 +300,7 @@ class submitForm extends Component {
                       </select>
                     </Grid>
                   </>
-                )}
+                )} */}
 
                 <Grid item>
                   <p>Upload a resume for sponsors to view!</p>

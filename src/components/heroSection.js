@@ -20,10 +20,13 @@ export default function HeroSection() {
         <h1>Devos Communication Center / Virtual</h1>
         <p>March 26-27</p>
         <div className={styles.heroBtns}>
-          <LocalButton buttonStyle="sign-up" to="/sign-up">
+          <LocalButton className={styles.signUpBtn} to="/sign-up">
             Sign Up
           </LocalButton>
-          {/* <OutsideButton href={SponsorshipPacket}>Sponsor us</OutsideButton> */}
+          <span className={styles.btnDivider} s />
+          <OutsideButton className={styles.sponsorBtn} href={SponsorshipPacket}>
+            Sponsor us
+          </OutsideButton>
         </div>
       </div>
     </div>

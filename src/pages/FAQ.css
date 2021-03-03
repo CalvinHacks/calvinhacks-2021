@@ -118,3 +118,9 @@ p.title {
         top: -150px;
     }
 }
+
+.contact {
+    text-align: center;
+    font-size: 1.25rem;
+    padding-bottom: 2rem;
+}
