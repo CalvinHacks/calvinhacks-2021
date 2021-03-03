@@ -18,6 +18,7 @@ export default function ScheduleSection() {
         <div className={styles.scheduleSection}>
           <h1 className={styles.title}>Itinerary</h1>
           <ScheduleTable />
+          <p className={styles.comingSoon}>Full schedule coming soon!</p>
         </div>
       </div>
     </>
