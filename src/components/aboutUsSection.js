@@ -8,16 +8,16 @@ import beach from "../images/beach.png"
 export default function AboutUsSection() {
   return (
     <div className={styles.background}>
-      <div className={styles.introduction}>
-      <img className={styles.beach} src={beach}></img>
-        <p className={styles.header}>
+      <div className={styles.imagecontainer}>
+        <img className={styles.image} src={beach}></img>
+      </div>
+      <p className={styles.header}>
           CalvinHacks2021 is a 24Hr hackathon at Calvin University <br>
           </br> Local, young and bright students will develop amazing software and hardware projects.
-          The best projects will be awarded prizes! It's a great, <br>
+          The best projects will be awarded prizes! It's a great, free opportunity for students to learn new things, <br>
           </br>
-          free opportunity for students to learn new things, connect with local companies, and have TONS of fun!
-        </p>
-      </div>
+           connect with local companies, and have TONS of fun!
+      </p>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <span class={styles.circle}>

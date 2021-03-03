@@ -13,16 +13,18 @@
     
 
 .image-container {
-    width: 100%;
-    max-height: 400px;
     overflow: hidden;
+    max-height: 40%;
 }
 
 .image {
-    top: -100px;
+    top: -300px;
     text-align: center;
     position: relative;
     vertical-align: middle;
+    width: 100%;
+    max-height: 40%;
+
 }
 .faqs {
     margin-left: 30px;
@@ -107,11 +109,4 @@ p.title {
     padding-right: 80px;
     font-size: 18px;
     opacity: 1;
-}
-
-@media only screen and (min-width: 1000px) {
-
-    .image {
-        top: -150px;
-    }
 }

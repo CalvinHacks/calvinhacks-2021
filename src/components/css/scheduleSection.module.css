@@ -1,7 +1,7 @@
 .scheduleContainer {
   display: flex;
   flex-direction: row;
-  background-image: url("../../images/landing.png");
+  background-image: url("../../images/landing.png") no-repeat;
 }
 
 .image {
