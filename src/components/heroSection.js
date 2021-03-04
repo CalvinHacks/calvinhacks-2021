@@ -3,7 +3,9 @@ import React from "react";
 
 // Import custom components
 import LocalButton from "./localButton";
+import OutsideButton from "./outsideButton";
 import Logo from "../images/logo-noBG.png";
+import SponsorshipPacket from "../pages/sponsorship_doc_2021.pdf";
 
 // Import styles
 import styles from "./css/heroSection.module.css";
@@ -15,17 +17,16 @@ export default function HeroSection() {
         <img src={Logo} alt="" />
       </div>
       <div className={styles.textContainer}>
-        <h1>Devos Communication Center</h1>
+        <h1>Devos Communication Center / Virtual</h1>
         <p>March 26-27</p>
         <div className={styles.heroBtns}>
-          <LocalButton buttonStyle="sign-up" to="/sign-up">
+          <LocalButton className={styles.signUpBtn} to="/sign-up">
             Sign Up
           </LocalButton>
-
-          {/* Put link to sponsorship packet */}
-          <LocalButton className={styles.btns} buttonStyle="sponsor">
-            Sponsor Us
-          </LocalButton>
+          <span className={styles.btnDivider} s />
+          <OutsideButton className={styles.sponsorBtn} href={SponsorshipPacket}>
+            Sponsor us
+          </OutsideButton>
         </div>
       </div>
     </div>

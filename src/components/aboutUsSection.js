@@ -3,7 +3,7 @@ import "./css/aboutUsSection.module.css";
 
 import picture from "../images/Jason.jpg";
 import styles from "./css/aboutUsSection.module.css";
-import beach from "../images/beach.png"
+import beach from "../images/beach.png";
 
 export default function AboutUsSection() {
   return (

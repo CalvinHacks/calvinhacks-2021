@@ -1,42 +1,39 @@
 :root {
-    --primary: #fff;
+    --primary: #F3CD00;
+    --secondary: #242424;
 }
 
 button {
-    padding: 8px 20px;
-    border-radius: 2px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
     outline: none;
-    border: none;
     cursor: pointer;
 }
 
 .signUpButton {
+    color: var(--secondary);
+    border: 0.1rem solid var(--primary);
     background-color: var(--primary);
-    color: #242424;
-    border: 1px solid var(--primary);
+    font-size: 1.25rem;
 }
 
-.sponsorButton {
-    background-color: transparent;
+.signUpButton:hover {
+    background: var(--secondary);
     color: #fff;
-    padding: 8px 20px;
-    border: 1px solid var(--primary);
+    --primary: var(--secondary);
     transition: all 0.3s ease-out;
 }
 
-.btnMedium {
-    padding: 8px 20px;
-    font-size: 20px;
+.sponsorButton {
+    color: var(--secondary);
+    border: 0.1rem solid var(--secondary);
+    background-color: #fff;
+    font-size: 1.25rem;
 }
 
-.btnLarge {
-    padding: 12px 26px;
-    font-size: 20px
-}
-
-.btnMedium:hover, .btnLarge:hover {
-    background: #F3CD00;
-    color: #242424;
-    --primary: #F3CD00;
+.sponsorButton:hover {
+    background: var(--secondary);
+    color: #fff;
+    --primary: var(--secondary);
     transition: all 0.3s ease-out;
 }

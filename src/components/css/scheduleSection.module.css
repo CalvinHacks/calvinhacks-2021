@@ -12,7 +12,7 @@ img {
   display: block;
   height: auto;
   width: 75%;
-  margin-top: 50px;
+  margin-top: 3.125rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -23,10 +23,15 @@ img {
 
 .title {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
+}
+
+.comingSoon {
+  font-size: 2rem;
+  color: #A12226;
 }
