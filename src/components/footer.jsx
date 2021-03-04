@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./css/footer.module.css";
 import Image from "../images/instagram.png";
-import Grid from '@material-ui/core/Grid';
+// import Grid from '@material-ui/core/Grid';
 
 // Footer from https://www.youtube.com/watch?v=g459Eia-bxw&t=8s
 
