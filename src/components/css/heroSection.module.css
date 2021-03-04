@@ -26,19 +26,19 @@
 
 .textContainer > h1 {
   color: black;
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 .textContainer > p {
   text-align: left;
   color: black;
-  font-size: 32px;
+  font-size: 2rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
 
 .heroBtns {
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 .btnDivider{
@@ -51,8 +51,6 @@
   .textContainer {
     margin-right: 1rem;
   }
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -62,7 +60,7 @@
   }
 
   .logoContainer > img {
-    width: 50%;
+    width: 80%;
     margin-top: 7.5vh;
   }
   
@@ -72,18 +70,15 @@
     margin-right: 1rem;
   }
 
-  .textContainer > p {
-    text-align: center;
+  .textContainer > h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
   }
 
-  /* .heroContainer > h1 {
-    font-size: 50px;
-    margin-top: -100px;
-  } */
-
-  /* .heroContainer > p {
-    font-size: 30px;
-  } */
+  .textContainer > p {
+    text-align: center;
+    margin-top: 1rem;
+  }
 
   .btnMobile {
     display: block;
