@@ -111,6 +111,7 @@ class submitForm extends Component {
   // Sending information to the firebase
   addUser = (e) => {
     e.preventDefault();
+    // let noError = true;
 
     // Initialize firebase DB and storage
     const storage = firebase.storage().ref();
@@ -136,6 +137,7 @@ class submitForm extends Component {
         // shirtSize: this.state.shirtSize,
       })
       .catch((error) => {
+        // noError = false;
         alert("This e-mail address has already been used!"); // Catches duplicate e-mail address
       });
 
@@ -162,7 +164,7 @@ class submitForm extends Component {
         alert("Resume successfully uploaded!");
       });
     }
-    // if(this.state.noError){
+    // if(noError){
     //   alert("Thank you for signing up for CalvinHacks 2021!")
     // }
   };
