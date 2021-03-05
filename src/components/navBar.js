@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 // Import custom components
 import LocalButton from "./localButton";
 import { Link } from "react-router-dom";
+// import { ReactComponent as Logo } from "../images/backpack-white.svg";
 
 // Import styles
 import styles from "./css/navBar.module.css";
@@ -35,6 +36,7 @@ export default function NavBar() {
         <div className={styles.navbarContainer}>
           <Link to="/" className={styles.navbarLogo} onClick={closeMobileMenu}>
             CalvinHacks 2021
+            {/* <Logo fill="red" /> */}
           </Link>
 
           <div className={styles.menuIcon} onClick={handleClick}>

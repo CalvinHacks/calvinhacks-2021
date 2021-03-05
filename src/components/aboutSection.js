@@ -1,5 +1,31 @@
 import React from "react";
 
+import styles from "./css/aboutSection.module.css";
+
 export default function AboutSection() {
-  return <></>;
+  return (
+    <>
+      <div className={styles.aboutContainer}>
+        <div className={styles.whatIsContainer}>
+          <h2>What is CalvinHacks?</h2>
+          <p>
+            CalvinHacks is a 24-hour hackathon at Calvin University where
+            creative and bright students come together to develop projects,
+            learn new skills, and bond with like-minded individuals! Students
+            have the opportunity to design software and win prizes, something
+            you just don't get in university-level coursework.
+          </p>
+        </div>
+        <div className={styles.adaptedContainer}>
+          <h2>How We've Adapted</h2>
+          <p>
+            This year, we are hosting a fully online hackathon! Through Discord
+            and Microsoft Teams, we'll be holding workshops, fun events, and
+            more. If conditions allow, we may even have the opportunity to meet
+            in person for a portion of the hackathon! Sign up to stay updated!
+          </p>
+        </div>
+      </div>
+    </>
+  );
 }

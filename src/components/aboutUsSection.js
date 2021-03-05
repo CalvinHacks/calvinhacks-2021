@@ -9,14 +9,14 @@ export default function AboutUsSection() {
   return (
     <div className={styles.background}>
       <div className={styles.imagecontainer}>
-        <img className={styles.image} src={beach}></img>
+        <img className={styles.image} src={beach} alt=""></img>
       </div>
       <p className={styles.header}>
-          CalvinHacks2021 is a 24Hr hackathon at Calvin University <br>
-          </br> Local, young and bright students will develop amazing software and hardware projects.
-          The best projects will be awarded prizes! It's a great, free opportunity for students to learn new things, <br>
-          </br>
-           connect with local companies, and have TONS of fun!
+        CalvinHacks2021 is a 24Hr hackathon at Calvin University <br></br>{" "}
+        Local, young and bright students will develop amazing software and
+        hardware projects. The best projects will be awarded prizes! It's a
+        great, free opportunity for students to learn new things, <br></br>
+        connect with local companies, and have TONS of fun!
       </p>
       <div className={styles.container}>
         <div className={styles.imageContainer}>

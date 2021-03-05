@@ -1,0 +1,37 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #A12226;
+}
+
+.whatIsContainer {
+    flex: 1;
+    padding: 1rem;
+}
+
+.whatIsContainer > h2 {
+    color: #fff;
+}
+
+.whatIsContainer > p {
+    color: #fff;
+}
+
+.adaptedContainer > h2 {
+    color: #fff;
+}
+
+.adaptedContainer > p {
+    color: #fff;
+}
+
+.adaptedContainer {
+    flex: 1;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 760px) {
+    .aboutContainer {
+        flex-direction: column;
+    }
+}
