@@ -1,0 +1,36 @@
+.logo {
+    /* filter: grayscale(1); */
+    transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+    filter: none;
+    transform: scale(1.05);
+}
+
+.tierContainer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.goldTier {
+    margin: 2rem;
+    flex: 1;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.silverTier {
+    margin: 2rem;
+    flex: 1;
+    width: 15%;
+    vertical-align: middle;
+}
+
+.bronzeTier {
+    margin: 2rem;
+    flex: 1;
+    width: 10%;
+    vertical-align: middle;
+}
