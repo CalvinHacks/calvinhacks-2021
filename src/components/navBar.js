@@ -82,23 +82,16 @@ export default function NavBar() {
               </Link>
             </li> */}
 
-            {/* <li>
-              <LocalButton
-                className={styles.navLinksMobile}
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </LocalButton>
-              <a
-                href="https://my.mlh.io/oauth/authorize?client_id=ypzioIbsUMnyoDOo0VfrnFhxPrUvwouAbSuxGnnKrZA&redirect_uri=http%3A%2F%2Fcalvinhacks.github.io%2Fcalvinhacks-2021%2F&response_type=token"
-                target="_self"
-                rel="noopener noreferrer"
-                className={styles.navLinksMobile}
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </a>
-            </li> */}
+            <li>
+              <Link to="sign-up">
+                <button
+                  className={styles.navLinksMobile}
+                  onClick={closeMobileMenu}
+                >
+                  Sign Up
+                </button>
+              </Link>
+            </li>
           </ul>
 
           {button && (

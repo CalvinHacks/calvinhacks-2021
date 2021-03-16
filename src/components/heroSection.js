@@ -14,10 +14,10 @@ export default function HeroSection() {
   return (
     <div className={styles.heroContainer}>
       <div className={styles.logoContainer}>
-        <img src={Logo} alt="" />
+        <img className={styles.hacksLogo} src={Logo} alt="" />
       </div>
       <div className={styles.textContainer}>
-        <h1>Devos Communication Center / Virtual</h1>
+        <h1>Calvin University / Virtual</h1>
         <p>March 26-27</p>
         <div className={styles.heroBtns}>
           <LocalButton className={styles.signUpBtn} to="/sign-up">

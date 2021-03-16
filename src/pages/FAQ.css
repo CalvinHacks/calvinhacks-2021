@@ -14,17 +14,19 @@
     
 
 .image-container {
-    width: 100%;
     max-height: 400px;
     overflow: hidden;
     flex: 1;
+    text-align: center;
 }
 
 .image {
-    top: -100px;
-    text-align: center;
+    margin-top: 4rem;
+    width: 75%;
     position: relative;
+    flex: 1;
     vertical-align: middle;
+    height: auto;
 }
 .faqs {
     margin-left: 30px;
@@ -113,7 +115,6 @@ p.title {
 }
 
 @media only screen and (min-width: 1000px) {
-
     .image {
         top: -150px;
     }
