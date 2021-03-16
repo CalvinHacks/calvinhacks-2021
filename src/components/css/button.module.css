@@ -15,13 +15,13 @@ button {
     border: 0.1rem solid var(--primary);
     background-color: var(--primary);
     font-size: 1.25rem;
+    transition: all 0.3s ease-out;
 }
 
 .signUpButton:hover {
     background: var(--secondary);
     color: #fff;
     --primary: var(--secondary);
-    transition: all 0.3s ease-out;
 }
 
 .sponsorButton {
@@ -29,11 +29,11 @@ button {
     border: 0.1rem solid var(--secondary);
     background-color: #fff;
     font-size: 1.25rem;
+    transition: all 0.3s ease-out;
 }
 
 .sponsorButton:hover {
     background: var(--secondary);
     color: #fff;
     --primary: var(--secondary);
-    transition: all 0.3s ease-out;
 }
