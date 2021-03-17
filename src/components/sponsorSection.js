@@ -3,6 +3,8 @@ import Spindance from "../images/spindance.png";
 import TEKTON from "../images/TEKTON.png";
 import AtomicObject from "../images/atomic-object.png";
 import Steelcase from "../images/steelcase.svg";
+import DornerWorks from "../images/dornerworks.png";
+
 import Calvin from "../images/calvin.svg";
 
 import styles from "./css/sponsorSection.module.css";
@@ -43,6 +45,13 @@ export default function SponsorSection() {
               className={`${styles.logo} ${styles.bronzeTier}`}
               alt=""
               src={Steelcase}
+            />
+          </a>
+          <a href="https://dornerworks.com/">
+            <img
+              className={`${styles.logo} ${styles.bronzeTier}`}
+              alt=""
+              src={DornerWorks}
             />
           </a>
           <a href="https://calvin.edu/">
