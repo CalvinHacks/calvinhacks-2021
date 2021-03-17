@@ -8,7 +8,7 @@ export default function Footer () {
       <div className={styles.leftContainer}>
         <div className={styles.info}>
           <ul className={styles.leftList}>
-            <li className={styles.leftItem}>CONTACT EMAIL: <a className={styles.link} href="https://www.google.com">hacks@calvin.edu</a></li>
+            <li className={styles.leftItem}>CONTACT EMAIL: <a className={styles.link} href="mailto: hacks@calvin.edu">hacks@calvin.edu</a></li>
             <li></li>
             <li className={styles.leftItem}>MORE INFO</li>
             <li className={styles.leftItem}>
