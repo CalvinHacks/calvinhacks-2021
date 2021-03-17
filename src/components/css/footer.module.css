@@ -1,9 +1,12 @@
 .mainFooter{
-    background-color:rgba(211, 197, 95, 0.857);
+    /* background-color:rgba(211, 197, 95, 0.857); */
+    background-color: #71B1C8;
     display: flex;
     flex-direction: row;
     min-height: 1vh;
     margin-top: 3em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .leftContainer {
@@ -22,15 +25,16 @@
     color:white;
 }
 
-.info ul {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+.leftList{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.info li {
-    font-family: brandon-grotesque, sans-serif;
+.leftItem{
+    /* font-family: brandon-grotesque, sans-serif; */
     color:white;
     font-style: normal;
+    font-size: 1rem;
     font-weight: 100;
     letter-spacing: 0.1em;
     margin-top: 0.2em;
@@ -39,34 +43,32 @@
     list-style-type: none;
 }
 
-.info a {
-    font-family: brandon-grotesque, sans-serif;
+.link{
+    /* font-family: brandon-grotesque, sans-serif; */
     color:white;
     font-style: normal;
     font-weight: 100;
 }
 
+.link:hover{
+    color:gold;
+}
+
 .followText {
-    font-family: brandon-grotesque, sans-serif;
+    /* font-family: brandon-grotesque, sans-serif; */
     color:white;
     font-style: normal;
+    font-size: 1rem;
     font-weight: 100;
-    letter-spacing: 0.1em;
-    margin-top: 1.5em;
+    letter-spacing: 0.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     list-style-type: none;
     text-align: center;
 }
 
-.defaultFont {
-    font-family: brandon-grotesque, sans-serif;
-    color:white;
-    font-style: normal;
-    font-weight: 100;
-    letter-spacing: 0.1em;
-}
-
 .socialMedia {
-    margin-top: -2em;
+    text-align: center;
 }
 
 .socialMediaIcon{
@@ -74,6 +76,17 @@
     width:32px;
 }
 
-a:hover{
-    color:gold;
+@media screen and (max-width: 768px) {
+    .mainFooter {
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+    .leftContainer {
+        text-align: center;
+    }
+
+    .leftItem{
+        margin-left: 0vh;
+    }
 }

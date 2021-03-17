@@ -21,12 +21,17 @@
 .navbarLogo {
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 1.5rem;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
   display: flex;
   align-items: center;
+}
+
+.navbarLogo:hover {
+  color: #F3CD00;
+  transition: all 0.2s ease-out;
 }
 
 .faTypo3 {
@@ -59,6 +64,7 @@
 }
 
 .navLinks:hover {
+  color: #F3CD00;
   border-bottom: 4px solid #F3CD00;
   transition: all 0.2s ease-out;
 }

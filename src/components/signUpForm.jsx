@@ -227,9 +227,10 @@ class submitForm extends Component {
         <Container component="main" maxWidth="xs">
           <CssBaseline />
           <div className={makeStyles.paper}>
-            <Typography component="h1" variant="h5">
+            {/* <Typography component="h1" variant="h5">
               Sign Up
-            </Typography>
+            </Typography> */}
+            <h1 className={styles.signUpTitle}>Sign Up</h1>
             <form className={makeStyles.form} noValidate>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
@@ -340,6 +341,7 @@ class submitForm extends Component {
                 <Grid item xs={12} />
               </Grid>
               <Button
+                style = {{marginBottom: 8}}
                 type="submit"
                 fullWidth
                 variant="contained"
@@ -349,8 +351,8 @@ class submitForm extends Component {
               >
                 Submit Form
               </Button>
-
               <Button
+                m={1}
                 type="submit"
                 fullWidth
                 variant="contained"

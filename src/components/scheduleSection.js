@@ -12,11 +12,11 @@ export default function ScheduleSection() {
   return (
     <>
       <div className={styles.scheduleContainer}>
-        <div className={styles.image}>
+        <div className={styles.cityContainer}>
           <img className={styles.city} src={City} alt="" />
         </div>
         <div className={styles.scheduleSection}>
-          <h1 className={styles.title}>Itinerary</h1>
+          <h1 className={styles.itineraryText}>Itinerary</h1>
           <ScheduleTable />
           <p className={styles.comingSoon}>Full schedule coming soon!</p>
         </div>

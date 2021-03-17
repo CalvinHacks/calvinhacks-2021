@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 // Import custom components
 import LocalButton from "./localButton";
 import { Link } from "react-router-dom";
-// import { ReactComponent as Logo } from "../images/backpack-white.svg";
+// import { ReactComponent as Logo } from "../images/logo.svg";
 
 // Import styles
 import styles from "./css/navBar.module.css";

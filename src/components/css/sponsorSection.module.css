@@ -1,3 +1,9 @@
+.sponsorText {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 .logo {
     /* filter: grayscale(1); */
     transition: all 0.3s ease-in-out;
@@ -31,6 +37,20 @@
 .bronzeTier {
     margin: 2rem;
     flex: 1;
-    width: 10%;
+    width: 12%;
     vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    .goldTier {
+        width: 80%;
+    }
+    
+    .silverTier {
+        width: 30%;
+    }
+    
+    .bronzeTier {
+        width: 24%;
+    }
 }
