@@ -6,9 +6,9 @@ export default function AboutSection() {
   return (
     <>
       <div className={styles.aboutContainer}>
-        <div className={styles.whatIsContainer}>
-          <h2>What is CalvinHacks?</h2>
-          <p>
+        <div className={styles.descriptionContainer}>
+          <h2 className={styles.headerText}>What is CalvinHacks?</h2>
+          <p className={styles.infoText}>
             CalvinHacks is a 24-hour hackathon at Calvin University where
             creative and bright students come together to develop projects,
             learn new skills, and bond with like-minded individuals! Students
@@ -16,9 +16,9 @@ export default function AboutSection() {
             you just don't get in university-level coursework.
           </p>
         </div>
-        <div className={styles.adaptedContainer}>
-          <h2>How We've Adapted</h2>
-          <p>
+        <div className={styles.descriptionContainer}>
+          <h2 className={styles.headerText}>How We've Adapted</h2>
+          <p className={styles.infoText}>
             This year, we are hosting a fully online hackathon! Through Discord
             and Microsoft Teams, we'll be holding workshops, fun events, and
             more. If conditions allow, we may even have the opportunity to meet

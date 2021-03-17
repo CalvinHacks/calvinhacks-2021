@@ -4,34 +4,32 @@
     background-color: #A12226;
 }
 
-.whatIsContainer {
+.descriptionContainer {
     flex: 1;
-    padding: 1rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
-.whatIsContainer > h2 {
+.headerText {
     color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-.whatIsContainer > p {
+.infoText {
     color: #fff;
-}
-
-.adaptedContainer > h2 {
-    color: #fff;
-}
-
-.adaptedContainer > p {
-    color: #fff;
-}
-
-.adaptedContainer {
-    flex: 1;
-    padding: 1rem;
+    font-size: 1.25rem;
+    text-align: center;
 }
 
 @media screen and (max-width: 760px) {
     .aboutContainer {
         flex-direction: column;
+    }
+
+    .descriptionContainer {
+        margin-bottom: 0rem;
     }
 }

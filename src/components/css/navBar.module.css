@@ -1,5 +1,4 @@
 .navbar {
-  /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
   background: #A12226;
   height: 80px;
   display: flex;
@@ -22,12 +21,17 @@
 .navbarLogo {
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 1.5rem;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
   display: flex;
   align-items: center;
+}
+
+.navbarLogo:hover {
+  color: #F3CD00;
+  transition: all 0.2s ease-out;
 }
 
 .faTypo3 {
@@ -60,6 +64,7 @@
 }
 
 .navLinks:hover {
+  color: #F3CD00;
   border-bottom: 4px solid #F3CD00;
   transition: all 0.2s ease-out;
 }
@@ -105,8 +110,6 @@
     transition: all 0.5s ease;
     background: #414141;
     left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
     z-index: 1;
   }
 
@@ -118,6 +121,7 @@
   }
 
   .navLinks:hover {
+    border-bottom: none;
     background-color: #fff;
     color: #242424;
     border-radius: 0;

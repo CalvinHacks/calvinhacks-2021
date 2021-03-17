@@ -111,7 +111,7 @@ class submitForm extends Component {
   // Sending information to the firebase
   addUser = (e) => {
     e.preventDefault();
-    // let noError = true;
+    let noError = true;
 
     // Initialize firebase DB and storage
     const storage = firebase.storage().ref();
@@ -137,8 +137,14 @@ class submitForm extends Component {
         // shirtSize: this.state.shirtSize,
       })
       .catch((error) => {
-        // noError = false;
+        noError = false;
         alert("This e-mail address has already been used!"); // Catches duplicate e-mail address
+      })
+      // Give an alert when successfully registered
+      .finally(() => {
+        if (noError) {
+          alert("Thank you for signing up for CalvinHacks 2021!")
+        }
       });
 
     // Resets state object after sending information to the firebase
@@ -167,6 +173,27 @@ class submitForm extends Component {
     // if(noError){
     //   alert("Thank you for signing up for CalvinHacks 2021!")
     // }
+
+  };
+
+  // Adding resume only to allow user to upload file without sign-up
+  addResume = e => {
+    e.preventDefault()
+
+    const storage = firebase.storage().ref();
+
+    // upload files to the firebase storage
+    if (this.state.fileName !== ''){ // Checks if use have uploaded any files
+      const file = this.state.fileName;
+      const fileRef = storage.child(file.name);
+      fileRef.put(file).then((snapshot) => {
+        alert("Resume successfully uploaded!")
+      })
+    }
+
+    this.setState({
+      fileName: ''
+    });
   };
 
   makeStyles = (theme) => ({
@@ -200,9 +227,10 @@ class submitForm extends Component {
         <Container component="main" maxWidth="xs">
           <CssBaseline />
           <div className={makeStyles.paper}>
-            <Typography component="h1" variant="h5">
+            {/* <Typography component="h1" variant="h5">
               Sign Up
-            </Typography>
+            </Typography> */}
+            <h1 className={styles.signUpTitle}>Sign Up</h1>
             <form className={makeStyles.form} noValidate>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
@@ -313,6 +341,7 @@ class submitForm extends Component {
                 <Grid item xs={12} />
               </Grid>
               <Button
+                style = {{marginBottom: 8}}
                 type="submit"
                 fullWidth
                 variant="contained"
@@ -320,8 +349,20 @@ class submitForm extends Component {
                 className={makeStyles.submit}
                 onClick={this.addUser}
               >
-                Submit
+                Submit Form
               </Button>
+              <Button
+                m={1}
+                type="submit"
+                fullWidth
+                variant="contained"
+                color="primary"
+                className={makeStyles.submit}
+                onClick={this.addResume}
+              >
+                Upload Resume Only
+              </Button>
+
             </form>
           </div>
           <Box mt={5}>

@@ -11,7 +11,7 @@ function FAQ() {
     {
       question: "What is a hackathon?",
       answer:
-        "CalvinHacks 2020, our hackathon, is a 24Hr event where you can build your ideas, network, show off, and have fun. This 24Hr event, from 6PM Friday to 6PM Saturday, will allow you to form a team, choose an idea, build it out, and show it off for a chance to win! Hundreds of students will attend, and you should too!",
+        "CalvinHacks 2021 is a 24-hour event where you can build your ideas, network, show off, and have fun. From 6PM Friday to 6PM Saturday, you have the opportunity to form a team, choose an idea, build it out, and showcase it for a chance to win prizes!",
       open: false,
     },
     {
@@ -23,13 +23,13 @@ function FAQ() {
     {
       question: "What if I'm a beginner?",
       answer:
-        "While helpful, no previous programming/engineering experience is required. Mentors will be available to help you with your project, don't worry. You're guaranteed to learn, regardless of your previous experience!",
+        "While helpful, no previous programming/engineering experience is required. Mentors will be available to help you with your project, so don't worry. You're guaranteed to learn, regardless of your previous experience!",
       open: false,
     },
     {
       question: "Is the hackathon all virtual?",
       answer:
-        "The entirety of the hackathon will be hosted online! You can attend from anywhere in the world!",
+        "The entirety of the hackathon will be hosted online, so you can attend from anywhere in the world!",
       open: false,
     },
     {
@@ -41,7 +41,7 @@ function FAQ() {
     {
       question: "What should I bring?",
       answer:
-        "You should definitely bring your student ID, laptop, and charger. If you need additional hardware for your project, we suggest bringing that along as well.",
+        "If you plan to attend in-person, you should definitely bring a mask, hand sanitizer, your student ID, laptop, and charger. If you need additional hardware for your project, we recommend bringing that along as well, as we will not be able to provide hardware this year.",
       open: false,
     },
     {
@@ -52,19 +52,19 @@ function FAQ() {
     {
       question: "What if I don't have a team or project idea?",
       answer:
-        "Having a team or an idea is not required! We will have an opportunity for you to find a team. There will be a wealth of mentors to help inspire you with an idea, so don't worry about that either!",
+        "Having a team or an idea is not required! We will have an opportunity for you to find a team at the start of the event. There will also be a wealth of mentors to help inspire you with an idea, so don't worry about that either!",
       open: false,
     },
     {
       question: "How big can my team be?",
       answer:
-        "Teams consist of 1-4 people. We suggest working with others, but you can work alone if you'd like!",
+        "Teams consist of 1-4 people. We suggest working with others, but you can work alone if you'd like! This year, we will have team Discord channels set up if you are unable to meet with your team in person.",
       open: false,
     },
     {
       question: "What can I make?",
       answer:
-        "You can make just about anything software or hardware related. The only twist is that it should be somewhat related to travel. Your imagination is the limit!",
+        "You can make just about anything software or hardware related. Your imagination is the limit!",
       open: false,
     },
     {
@@ -81,7 +81,7 @@ function FAQ() {
     {
       question: "Can I help out?",
       answer:
-        "Yes! We'd love to have you! Please email us at hacks@calvin.edu.",
+        "Yes, we'd love to have you! Please email us at hacks@calvin.edu to get started as an event volunteer.",
       open: false,
     },
   ]);

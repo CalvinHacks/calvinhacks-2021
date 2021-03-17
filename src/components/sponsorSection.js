@@ -3,6 +3,7 @@ import Spindance from "../images/spindance.png";
 import TEKTON from "../images/TEKTON.png";
 import AtomicObject from "../images/atomic-object.png";
 import Steelcase from "../images/steelcase.svg";
+import Calvin from "../images/calvin.svg";
 
 import styles from "./css/sponsorSection.module.css";
 
@@ -10,7 +11,7 @@ export default function SponsorSection() {
   return (
     <>
       <div className={styles.sponsorContainer}>
-        <h2>Our Sponsors</h2>
+        <h1 className={styles.sponsorText}>Our Sponsors</h1>
         <div className={styles.tierContainer}>
           <a href="https://www.tekton.com">
             <img
@@ -42,6 +43,13 @@ export default function SponsorSection() {
               className={`${styles.logo} ${styles.bronzeTier}`}
               alt=""
               src={Steelcase}
+            />
+          </a>
+          <a href="https://calvin.edu/">
+            <img
+              className={`${styles.logo} ${styles.bronzeTier}`}
+              alt=""
+              src={Calvin}
             />
           </a>
         </div>
