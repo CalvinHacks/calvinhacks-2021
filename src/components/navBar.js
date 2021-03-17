@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 // Import custom components
 import LocalButton from "./localButton";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // import { ReactComponent as Logo } from "../images/logo.svg";
 
 // Import styles
@@ -27,6 +27,11 @@ export default function NavBar() {
   useEffect(() => {
     showButton();
   }, []);
+
+  let pathname = useLocation();
+  const BreakLine = () => {
+    return <div className="break-line"></div>;
+  };
 
   window.addEventListener("resize", showButton);
 
@@ -61,6 +66,7 @@ export default function NavBar() {
               >
                 Schedule
               </Link>
+              {pathname === "/schedule" ? BreakLine() : null}
             </li>
             <li className={styles.navItem}>
               <Link
@@ -70,6 +76,7 @@ export default function NavBar() {
               >
                 FAQ
               </Link>
+              {pathname === "/faq" ? BreakLine() : null}
             </li>
 
             {/* <li className={styles.navItem}>
@@ -91,6 +98,7 @@ export default function NavBar() {
                   Sign Up
                 </button>
               </Link>
+              {pathname === "/sign-up" ? BreakLine() : null}
             </li>
           </ul>
 

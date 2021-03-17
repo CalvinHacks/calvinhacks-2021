@@ -113,6 +113,11 @@
     z-index: 1;
   }
 
+  .navbarLogo {
+    justify-self: center;
+    margin-left: 0rem;
+  }
+
   .navLinks {
     text-align: center;
     padding: 2rem;
