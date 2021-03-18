@@ -4,10 +4,10 @@ import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
-import Link from "@material-ui/core/Link";
+// import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
+// import Box from "@material-ui/core/Box";
+// import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import firebase from "firebase";
@@ -15,18 +15,18 @@ import firebase from "firebase";
 import styles from "./css/signUpForm.module.css";
 
 // Create copyright
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://www.calvinhacks.org">
-        CalvinHacks
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
+// function Copyright() {
+//   return (
+//     <Typography variant="body2" color="textSecondary" align="center">
+//       {"Copyright © "}
+//       <Link color="inherit" href="https://www.calvinhacks.org">
+//         CalvinHacks
+//       </Link>{" "}
+//       {new Date().getFullYear()}
+//       {"."}
+//     </Typography>
+//   );
+// }
 
 class submitForm extends Component {
   constructor(props) {
@@ -197,6 +197,9 @@ class submitForm extends Component {
   };
 
   makeStyles = (theme) => ({
+    container: {
+      marginBottom: "3rem",
+    },
     paper: {
       marginTop: theme.spacing(8),
       display: "flex",
@@ -224,7 +227,7 @@ class submitForm extends Component {
   render() {
     return (
       <div className={styles.formContainer}>
-        <Container component="main" maxWidth="xs">
+        <Container className={makeStyles.container} component="main" maxWidth="xs">
           <CssBaseline />
           <div className={makeStyles.paper}>
             {/* <Typography component="h1" variant="h5">
@@ -333,7 +336,7 @@ class submitForm extends Component {
                 )} */}
 
                 <Grid item>
-                  <p>Upload a resume for sponsors to view!</p>
+                  <p>Upload a resume for sponsors to view! (optional)</p>
                 </Grid>
                 <Grid item xs={12}>
                   <input type="file" onChange={this.onChange} />
@@ -365,10 +368,11 @@ class submitForm extends Component {
 
             </form>
           </div>
-          <Box mt={5}>
+          {/* <Box mt={5}>
             <Copyright />
-          </Box>
+          </Box> */}
         </Container>
+        <div className={styles.spaceDiv} />
       </div>
     );
   }

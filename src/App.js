@@ -7,7 +7,7 @@ import Schedule from "./pages/Schedule";
 import FAQ from "./pages/FAQ";
 import AboutUs from "./pages/AboutUs";
 import SignUp from "./pages/SignUp";
-// import Footer from "./components/footer";
+import Footer from "./components/footer";
 
 export default function App() {
   return (
@@ -21,7 +21,7 @@ export default function App() {
           <Route path="/about-us" exact component={AboutUs} />
           <Route exact path="/sign-up" component={SignUp} />
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </>
   );
