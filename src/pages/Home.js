@@ -4,7 +4,6 @@ import React from "react";
 import HeroSection from "../components/heroSection";
 import AboutSection from "../components/aboutSection";
 import SponsorSection from "../components/sponsorSection";
-import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -12,7 +11,6 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <SponsorSection />
-      <Footer />
     </>
   );
 }

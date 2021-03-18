@@ -12,20 +12,21 @@
 
 .navbarContainer {
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
-  height: 80px;
-  max-width: 1500px;
+  height: 5rem;
 }
 
 .navbarLogo {
   color: #fff;
+  flex: 1;
   justify-self: start;
-  margin-left: 1.5rem;
+  margin-left: 4rem;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
-  display: flex;
+  /* display: flex; */
   align-items: center;
 }
 
@@ -45,7 +46,7 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 60vw;
+  /* width: 60vw; */
   justify-content: end;
   margin-right: 2rem;
 }
@@ -69,12 +70,20 @@
   transition: all 0.2s ease-out;
 }
 
+.signUpButton {
+  margin-right: 2rem;
+}
+
 .faBars {
   color: #fff;
 }
 
 .navLinksMobile {
   display: none;
+}
+
+.signUpLink {
+  text-decoration: none;
 }
 
 .menuIcon {

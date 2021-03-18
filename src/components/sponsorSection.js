@@ -15,14 +15,22 @@ export default function SponsorSection() {
       <div className={styles.sponsorContainer}>
         <h1 className={styles.sponsorText}>Our Sponsors</h1>
         <div className={styles.tierContainer}>
-          <a href="https://www.tekton.com">
+          <a
+            href="https://www.tekton.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className={`${styles.logo} ${styles.goldTier}`}
               alt=""
               src={TEKTON}
             />
           </a>
-          <a href="https://spindance.com">
+          <a
+            href="https://spindance.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className={`${styles.logo} ${styles.goldTier}`}
               alt=""
@@ -31,7 +39,11 @@ export default function SponsorSection() {
           </a>
         </div>
         <div className={styles.tierContainer}>
-          <a href="https://www.atomicobject.com">
+          <a
+            href="https://www.atomicobject.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className={`${styles.logo} ${styles.silverTier}`}
               alt=""
@@ -40,21 +52,33 @@ export default function SponsorSection() {
           </a>
         </div>
         <div className={styles.tierContainer}>
-          <a href="https://www.steelcase.com">
+          <a
+            href="https://www.steelcase.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className={`${styles.logo} ${styles.bronzeTier}`}
               alt=""
               src={Steelcase}
             />
           </a>
-          <a href="https://dornerworks.com/">
+          <a
+            href="https://dornerworks.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className={`${styles.logo} ${styles.bronzeTier}`}
               alt=""
               src={DornerWorks}
             />
           </a>
-          <a href="https://calvin.edu/">
+          <a
+            href="https://calvin.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className={`${styles.logo} ${styles.bronzeTier}`}
               alt=""

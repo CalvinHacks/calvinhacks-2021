@@ -1,7 +1,6 @@
 .faq-container {
-    background: url('../images/landing.png') center center/cover no-repeat;
+    background: url('../../images/landing.png') center center/cover no-repeat fixed;
     flex: 1;
-    height: 100vh;
     width: 100%;
     /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
     object-fit: contain;
