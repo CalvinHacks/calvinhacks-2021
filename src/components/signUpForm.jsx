@@ -147,6 +147,19 @@ class submitForm extends Component {
         }
       });
 
+    // upload files to the firebase storage
+    if (this.state.fileName !== "") {
+      // Checks if user has uploaded any files
+      const file = this.state.fileName;
+      let date = new Date();
+      let numSeconds = date.getHours() * 3600 + date.getMinutes() * 60 + date.getSeconds();
+      let hash = Math.floor(Math.random() * numSeconds);
+      const fileRef = storage.child(hash + "_" + file.name);
+      fileRef.put(file).then((snapshot) => {
+        alert("Resume successfully uploaded!");
+      });
+    }
+
     // Resets state object after sending information to the firebase
     this.setState({
       firstName: "",
@@ -160,16 +173,6 @@ class submitForm extends Component {
       showCheckbox: false,
       // showShirtOption: false,
     });
-
-    // upload files to the firebase storage
-    if (this.state.fileName !== "") {
-      // Checks if user has uploaded any files
-      const file = this.state.fileName;
-      const fileRef = storage.child(file.name);
-      fileRef.put(file).then((snapshot) => {
-        alert("Resume successfully uploaded!");
-      });
-    }
     // if(noError){
     //   alert("Thank you for signing up for CalvinHacks 2021!")
     // }
@@ -185,7 +188,10 @@ class submitForm extends Component {
     // upload files to the firebase storage
     if (this.state.fileName !== ''){ // Checks if use have uploaded any files
       const file = this.state.fileName;
-      const fileRef = storage.child(file.name);
+      let date = new Date();
+      let numSeconds = date.getHours() * 3600 + date.getMinutes() * 60 + date.getSeconds();
+      let hash = Math.floor(Math.random() * numSeconds);
+      const fileRef = storage.child(hash + "_" + file.name);
       fileRef.put(file).then((snapshot) => {
         alert("Resume successfully uploaded!")
       })
@@ -336,7 +342,9 @@ class submitForm extends Component {
                 )} */}
 
                 <Grid item>
-                  <p>Upload a resume for sponsors to view! (optional)</p>
+                  <p>Optional: Upload a resume for sponsors to view!</p>
+                  <p>Ensure your resume has a unique identifier.</p>
+                  <p>(e.g. firstName_lastName_resume.pdf)</p>
                 </Grid>
                 <Grid item xs={12}>
                   <input type="file" onChange={this.onChange} />
