@@ -130,6 +130,19 @@ class submitForm extends Component {
         }
       });
 
+    // upload files to the firebase storage
+    if (this.state.fileName !== "") {
+      // Checks if user has uploaded any files
+      const file = this.state.fileName;
+      let date = new Date();
+      let numSeconds = date.getHours() * 3600 + date.getMinutes() * 60 + date.getSeconds();
+      let hash = Math.floor(Math.random() * numSeconds);
+      const fileRef = storage.child(hash + "_" + file.name);
+      fileRef.put(file).then((snapshot) => {
+        alert("Resume successfully uploaded!");
+      });
+    }
+
     // Resets state object after sending information to the firebase
     this.setState({
       firstName: "",
@@ -143,21 +156,6 @@ class submitForm extends Component {
       showCheckbox: false,
       // showShirtOption: false,
     });
-
-    // Checks if user has uploaded any files
-    if (this.state.fileName !== "") {
-      // Calculate current time as an integer value to calculate a random number
-      let bias = (Date().getHours() * 3600) + (Date().getMinutes() * 60) + Date().getSeconds();
-      let randNum = Math.floor(Math.random() * bias) + 1;
-
-      const file = this.state.fileName
-
-      // Append random number to start of file
-      const fileRef = storage.child(randNum + "_" + file.name);
-      fileRef.put(file).then((snapshot) => {
-        alert("Resume successfully uploaded!");
-      });
-    }
     // if(noError){
     //   alert("Thank you for signing up for CalvinHacks 2021!")
     // }
@@ -172,16 +170,11 @@ class submitForm extends Component {
 
     // upload files to the firebase storage
     if (this.state.fileName !== ''){ // Checks if use have uploaded any files
-      // Calculate current time as an integer value to calculate a random number
+      const file = this.state.fileName;
       let date = new Date();
-      let bias = (date.getHours() * 3600) + (date.getMinutes() * 60) + date.getSeconds();
-      let randNum = Math.floor(Math.random() * bias) + 1;
-
-      const file = this.state.fileName
-
-      // Append random number to start of file
-      const fileRef = storage.child(randNum + "_" + file.name);
-
+      let numSeconds = date.getHours() * 3600 + date.getMinutes() * 60 + date.getSeconds();
+      let hash = Math.floor(Math.random() * numSeconds);
+      const fileRef = storage.child(hash + "_" + file.name);
       fileRef.put(file).then((snapshot) => {
         alert("Resume successfully uploaded!")
       })
@@ -332,7 +325,7 @@ class submitForm extends Component {
                 )} */}
 
                 <Grid item>
-                  <p>Optional: Upload a resume for sponsors to view! </p>
+                  <p>Optional: Upload a resume for sponsors to view!</p>
                   <p>Ensure your resume has a unique identifier.</p>
                   <p>(e.g. firstName_lastName_resume.pdf)</p>
                 </Grid>
