@@ -74,16 +74,6 @@ export default function ScheduleTable() {
           location=""
         />
         <ScheduleRow
-          time="2:30 PM"
-          event="Calvin Startups Workshop"
-          location="Google Meet"
-        />
-        <ScheduleRow
-          time="10:00 AM"
-          event="Workshop with Atomic Object"
-          location="Google Meet"
-        />
-        <ScheduleRow
           time="12:00 PM"
           event="Sponsor Trivia (with prizes!)"
           location="Google Meet"
