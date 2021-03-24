@@ -30,6 +30,14 @@
   font-weight: bold;
 }
 
+.noticeText {
+  color: #A12226;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
 .comingSoon {
   font-size: 2rem;
   color: #A12226;

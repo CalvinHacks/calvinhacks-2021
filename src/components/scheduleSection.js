@@ -17,8 +17,9 @@ export default function ScheduleSection() {
         </div>
         <div className={styles.scheduleSection}>
           <h1 className={styles.itineraryText}>Itinerary</h1>
+          <h2 className={styles.noticeText}>Note: all times listed are in Eastern Standard Time (EST)</h2>
           <ScheduleTable />
-          <p className={styles.comingSoon}>Full schedule coming soon!</p>
+          <p className={styles.comingSoon}>Schedule subject to change before event, check back on the day of!</p>
         </div>
       </div>
     </>
