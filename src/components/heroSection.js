@@ -17,7 +17,8 @@ export default function HeroSection() {
         <img className={styles.hacksLogo} src={Logo} alt="" />
       </div>
       <div className={styles.textContainer}>
-        <h1>Calvin University / Virtual</h1>
+        <h1>Calvin University</h1>
+        <h1>Commons Dining Hall | Virtual</h1>
         <p>March 26-27</p>
         <div className={styles.heroBtns}>
           <LocalButton className={styles.signUpBtn} to="/sign-up">
