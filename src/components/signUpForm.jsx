@@ -4,29 +4,12 @@ import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
-// import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
-// import Box from "@material-ui/core/Box";
-// import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import firebase from "firebase";
 
 import styles from "./css/signUpForm.module.css";
-
-// Create copyright
-// function Copyright() {
-//   return (
-//     <Typography variant="body2" color="textSecondary" align="center">
-//       {"Copyright © "}
-//       <Link color="inherit" href="https://www.calvinhacks.org">
-//         CalvinHacks
-//       </Link>{" "}
-//       {new Date().getFullYear()}
-//       {"."}
-//     </Typography>
-//   );
-// }
 
 class submitForm extends Component {
   constructor(props) {
@@ -161,11 +144,16 @@ class submitForm extends Component {
       // showShirtOption: false,
     });
 
-    // upload files to the firebase storage
+    // Checks if user has uploaded any files
     if (this.state.fileName !== "") {
-      // Checks if user has uploaded any files
-      const file = this.state.fileName;
-      const fileRef = storage.child(file.name);
+      // Calculate current time as an integer value to calculate a random number
+      let bias = (Date().getHours() * 3600) + (Date().getMinutes() * 60) + Date().getSeconds();
+      let randNum = Math.floor(Math.random() * bias) + 1;
+
+      const file = this.state.fileName
+
+      // Append random number to start of file
+      const fileRef = storage.child(randNum + "_" + file.name);
       fileRef.put(file).then((snapshot) => {
         alert("Resume successfully uploaded!");
       });
@@ -184,8 +172,16 @@ class submitForm extends Component {
 
     // upload files to the firebase storage
     if (this.state.fileName !== ''){ // Checks if use have uploaded any files
-      const file = this.state.fileName;
-      const fileRef = storage.child(file.name);
+      // Calculate current time as an integer value to calculate a random number
+      let date = new Date();
+      let bias = (date.getHours() * 3600) + (date.getMinutes() * 60) + date.getSeconds();
+      let randNum = Math.floor(Math.random() * bias) + 1;
+
+      const file = this.state.fileName
+
+      // Append random number to start of file
+      const fileRef = storage.child(randNum + "_" + file.name);
+
       fileRef.put(file).then((snapshot) => {
         alert("Resume successfully uploaded!")
       })
@@ -336,7 +332,9 @@ class submitForm extends Component {
                 )} */}
 
                 <Grid item>
-                  <p>Upload a resume for sponsors to view! (optional)</p>
+                  <p>Optional: Upload a resume for sponsors to view! </p>
+                  <p>Ensure your resume has a unique identifier.</p>
+                  <p>(e.g. firstName_lastName_resume.pdf)</p>
                 </Grid>
                 <Grid item xs={12}>
                   <input type="file" onChange={this.onChange} />
@@ -368,9 +366,6 @@ class submitForm extends Component {
 
             </form>
           </div>
-          {/* <Box mt={5}>
-            <Copyright />
-          </Box> */}
         </Container>
         <div className={styles.spaceDiv} />
       </div>

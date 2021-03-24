@@ -20,9 +20,9 @@ export default function AboutSection() {
           <h2 className={styles.headerText}>How We've Adapted</h2>
           <p className={styles.infoText}>
             This year, we are hosting a fully online hackathon! Through Discord
-            and Microsoft Teams, we'll be holding workshops, fun events, and
-            more. If conditions allow, we may even have the opportunity to meet
-            in person for a portion of the hackathon! Sign up to stay updated!
+            and Google Meet, we'll be holding workshops, fun events, and more.
+            For Calvin University students, we have the opportunity to host a
+            10-hour in-person portion! Sign up to stay updated!
           </p>
         </div>
       </div>
