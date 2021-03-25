@@ -42,6 +42,8 @@
   font-size: 2rem;
   color: #A12226;
   text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media screen and (max-width: 960px) {

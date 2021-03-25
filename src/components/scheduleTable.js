@@ -44,7 +44,7 @@ export default function ScheduleTable() {
         />
         <ScheduleRow
           time="9:30 PM"
-          event="IoT Workshop with Professor Schuurman"
+          event='"A Primer on IoT Machine-to-Machine (M2M) communications using MQTT" with Professor Schuurman'
           location="Google Meet"
         />
         <ScheduleRow time="11:00 PM" event="Jackbox" location="Discord" />
@@ -75,7 +75,7 @@ export default function ScheduleTable() {
         />
         <ScheduleRow
           time="9:00 AM"
-          event="Workshop with SpinDance"
+          event='"An Introduction to the Internet of Things" with SpinDance'
           location="Google Meet"
         />
         <ScheduleRow
