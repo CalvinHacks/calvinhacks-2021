@@ -31,11 +31,20 @@ export default function ScheduleTable() {
           event="Opening Ceremony"
           location="Commons Dining Hall / Discord"
         />
-        <ScheduleRow time="6:30 PM" event="Hacking Starts" location="" />
+        <ScheduleRow
+          time="6:30 PM"
+          event="Hacking Starts / Team Formation"
+          location=""
+        />
         <ScheduleRow
           time="7:00 PM"
           event="Beginner's Workshop"
           location="Microsoft Teams"
+        />
+        <ScheduleRow
+          time="8:15 PM"
+          event="Dinner (in-person attendees only)"
+          location="Commons Dining Hall / Outside"
         />
         <ScheduleRow
           time="9:00 PM"
@@ -105,12 +114,12 @@ export default function ScheduleTable() {
         <ScheduleRow
           time="6:45 PM"
           event="Finalist Demos Begin"
-          location="Twitch"
+          location="Microsoft Teams"
         />
         <ScheduleRow
           time="7:30 PM"
           event="Announce Winners"
-          location="Twitch"
+          location="Microsoft Teams"
         />
       </table>
     </>
