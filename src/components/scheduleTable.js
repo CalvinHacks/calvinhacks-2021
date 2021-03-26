@@ -35,17 +35,17 @@ export default function ScheduleTable() {
         <ScheduleRow
           time="7:00 PM"
           event="Beginner's Workshop"
-          location="Google Meet"
+          location="Microsoft Teams"
         />
         <ScheduleRow
           time="9:00 PM"
           event="Sponsor Trivia - Tekton and SpinDance (with prizes!)"
-          location="Google Meet"
+          location="Microsoft Teams"
         />
         <ScheduleRow
           time="9:30 PM"
           event='"A Primer on IoT Machine-to-Machine (M2M) communications using MQTT" with Professor Schuurman'
-          location="Google Meet"
+          location="Microsoft Teams"
         />
         <ScheduleRow time="11:00 PM" event="Jackbox" location="Discord" />
       </table>
@@ -76,17 +76,17 @@ export default function ScheduleTable() {
         <ScheduleRow
           time="9:00 AM"
           event='"An Introduction to the Internet of Things" with SpinDance'
-          location="Google Meet"
+          location="Microsoft Teams"
         />
         <ScheduleRow
           time="12:00 PM"
           event="Sponsor Trivia (with prizes!)"
-          location="Google Meet"
+          location="Microsoft Teams"
         />
         <ScheduleRow
           time="2:30 PM"
           event='"How to Pitch Your Projects" with Calvin Start-Ups'
-          location="Google Meet"
+          location="Microsoft Teams"
         />
         <ScheduleRow
           time="4:00 PM"
